@@ -5,7 +5,7 @@
 **Security Researcher | Systems Engineer | Open Source Developer**
 
 [![GitHub](https://img.shields.io/badge/GitHub-bad--antics-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
-[![Repositories](https://img.shields.io/badge/Repositories-435-blue?style=for-the-badge)](https://github.com/bad-antics?tab=repositories)
+[![Repositories](https://img.shields.io/badge/Repositories-443-blue?style=for-the-badge)](https://github.com/bad-antics?tab=repositories)
 [![Tools](https://img.shields.io/badge/Security_Tools-135+-red?style=for-the-badge)](https://github.com/bad-antics/nullsec-linux)
 [![Discord](https://img.shields.io/badge/Discord-killers-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/killers)
 
@@ -142,7 +142,7 @@ Independent security researcher building the **NullSec Security Framework** — 
 
 | Metric | Value |
 |--------|-------|
-| 📦 **Public Repositories** | 435 |
+| 📦 **Public Repositories** | 443 |
 | 🛠️ **Security Tools** | 135+ |
 | 🌍 **Programming Languages** | 15+ |
 | 📱 **Mobile Manufacturers** | 18 |
@@ -156,6 +156,12 @@ Independent security researcher building the **NullSec Security Framework** — 
 <img src="https://github-readme-stats.vercel.app/api?username=bad-antics&show_icons=true&theme=github_dark&hide_border=true&count_private=true" alt="GitHub Stats" height="300" />
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bad-antics&layout=pie&theme=github_dark&hide_border=true&langs_count=20&hide=html,css,makefile,dockerfile" alt="Top Languages" height="300" />
 
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=bad-antics&theme=github-dark-blue&hide_border=true" alt="GitHub Streak" />
+
+<img src="https://github-profile-trophy.vercel.app/?username=bad-antics&theme=darkhub&no-frame=true&column=7&margin-w=15" alt="Trophies" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=bad-antics&theme=github-dark&hide_border=true&area=true" alt="Activity Graph" />
 </div>
 
 ---
@@ -166,7 +172,7 @@ Independent security researcher building the **NullSec Security Framework** — 
 
 [![Website](https://img.shields.io/badge/Website-bad--antics.github.io-00C7B7?style=for-the-badge)](https://bad-antics.github.io)
 [![Discord](https://img.shields.io/badge/Discord-killers-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/killers)
-[![GitHub](https://img.shields.io/badge/GitHub-435_Repos-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
+[![GitHub](https://img.shields.io/badge/GitHub-443_Repos-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
 
 </div>
 
@@ -184,7 +190,7 @@ Independent security researcher building the **NullSec Security Framework** — 
 
 ## 🚀 Community Contributions
 
-Currently contributing NullSec tools to **65 open PRs (6 merged!)** across the security community:
+Currently contributing NullSec tools to **76 open PRs (6 merged!)** across the security community:
 
 | Category | PRs | Highlights |
 |----------|-----|------------|
