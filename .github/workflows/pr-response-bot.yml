@@ -1,4 +1,4 @@
-name: PR Response Bot
+name: NullSec Response Bot
 
 on:
   pull_request_target:
@@ -7,6 +7,8 @@ on:
     types: [submitted]
   issue_comment:
     types: [created]
+  issues:
+    types: [opened, labeled]
   schedule:
     - cron: '0 9 * * 1'  # Weekly Monday 9am - stale check
 
@@ -19,6 +21,224 @@ env:
   STALE_DAYS: 14
 
 jobs:
+  # ========== ISSUE HANDLERS ==========
+  welcome-issue:
+    if: github.event_name == 'issues' && github.event.action == 'opened'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome and Classify Issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const author = issue.user.login;
+            const repoOwner = context.repo.owner;
+            
+            // Don't respond to own issues
+            if (author === repoOwner) return;
+            
+            const title = issue.title.toLowerCase();
+            const body = (issue.body || '').toLowerCase();
+            
+            let response = '';
+            let labels = [];
+            let isPriority = false;
+            
+            // === COLLABORATION REQUEST ===
+            if (body.includes('collaborate') || body.includes('team up') || 
+                body.includes('work together') || body.includes('partnership') ||
+                body.includes('join the team') || body.includes('contribute to nullsec') ||
+                title.includes('collaboration') || title.includes('team up')) {
+              
+              response = `
+## 👋 Hey @${author}! Thanks for reaching out about collaborating!
+
+I'm **always** excited to connect with fellow security researchers and developers!
+
+### 🤝 Ways to Get Involved:
+
+| Type | Description |
+|------|-------------|
+| 🔧 **Code** | PRs welcome! Check \`good first issue\` labels |
+| 📖 **Docs** | Help with documentation, tutorials, guides |
+| 🧪 **Testing** | Test new features, report bugs |
+| 💡 **Ideas** | Share feature ideas and improvements |
+| 🔬 **Research** | Security research, CVE hunting |
+
+### 📋 Let's Connect:
+
+Could you tell me more about:
+1. **Your background** - What's your expertise area?
+2. **Interest area** - Which NullSec tools interest you most?
+3. **Availability** - How much time can you dedicate?
+4. **Goals** - What do you hope to achieve?
+
+I'll respond personally very soon! 🚀
+
+---
+*🤖 NullSec Bot - Flagged as priority for personal follow-up*
+`;
+              labels = ['collaboration', 'priority', 'needs-response'];
+              isPriority = true;
+              
+            // === BUG REPORT ===
+            } else if (title.includes('bug') || title.includes('error') || 
+                      title.includes('crash') || title.includes('not working') ||
+                      title.includes('broken') || title.includes('fail')) {
+              
+              response = `
+## 👋 Thanks for the bug report, @${author}!
+
+I'll investigate this ASAP. To help me fix it faster:
+
+### 📋 Please Provide:
+
+- **Environment:** OS, kernel version, architecture
+- **Tool Version:** \`tool --version\` output
+- **Steps to Reproduce:** Exact commands/actions
+- **Expected vs Actual:** What should happen vs what happened
+- **Logs:** Error messages, stack traces, debug output
+
+### 🔍 Quick Checks:
+
+- [ ] Are you using the latest version?
+- [ ] Did you check existing issues for duplicates?
+- [ ] Have you tried with a clean config?
+
+I'll get back to you soon! 🔧
+
+---
+*🤖 NullSec Bot*
+`;
+              labels = ['bug', 'needs-triage'];
+              
+            // === FEATURE REQUEST / SUGGESTION ===
+            } else if (title.includes('feature') || title.includes('request') ||
+                      title.includes('suggestion') || title.includes('add support') ||
+                      title.includes('would be nice') || title.includes('enhancement')) {
+              
+              response = `
+## 👋 Thanks for the suggestion, @${author}!
+
+I love hearing ideas from users! ✨
+
+### 📋 To Help Evaluate:
+
+1. **Use Case:** What problem does this solve?
+2. **Current Workaround:** How do you handle this now?
+3. **Priority:** Is this blocking your workflow?
+4. **Implementation Ideas:** Any thoughts on how it could work?
+
+### 📊 What Happens Next:
+
+1. I'll review and consider feasibility
+2. Might ask follow-up questions
+3. If approved, it gets added to the roadmap
+4. You're welcome to submit a PR implementing it!
+
+Thanks for helping improve NullSec! 💪
+
+---
+*🤖 NullSec Bot*
+`;
+              labels = ['enhancement', 'needs-triage'];
+              
+            // === QUESTION / HELP ===
+            } else if (title.includes('?') || title.includes('how to') || 
+                      title.includes('help') || title.includes('question') ||
+                      body.includes('how do i') || body.includes('can i')) {
+              
+              response = `
+## 👋 Hey @${author}! Happy to help!
+
+I'll answer your question soon. In the meantime:
+
+### 📚 Resources:
+
+- 📖 Check the **README** for documentation
+- 🔍 Search **existing issues** for similar questions
+- 📝 Check the **wiki** if available
+
+### 💡 Tips:
+
+If this is about:
+- **Installation** - Include your OS and package manager
+- **Usage** - Share the exact commands you're trying
+- **Integration** - Describe your setup/environment
+
+I'll get back to you shortly! 
+
+---
+*🤖 NullSec Bot*
+`;
+              labels = ['question'];
+              
+            // === SECURITY VULNERABILITY ===
+            } else if (title.includes('security') || title.includes('vulnerability') ||
+                      title.includes('cve') || title.includes('exploit')) {
+              
+              response = `
+## 🔒 Security Report Received
+
+Thanks @${author} for the security report!
+
+⚠️ **Important:** If this is a sensitive vulnerability, please:
+1. **Do NOT** post full exploit details publicly
+2. Consider using GitHub's private vulnerability reporting
+3. Or email security details privately
+
+I'll review this with high priority and respond ASAP.
+
+---
+*🤖 NullSec Bot - Security issues are top priority*
+`;
+              labels = ['security', 'priority'];
+              isPriority = true;
+              
+            // === DEFAULT WELCOME ===
+            } else {
+              response = `
+## 👋 Thanks for opening this issue, @${author}!
+
+I'll review it and respond soon. 
+
+If this is:
+- 🐛 **Bug** - Please add reproduction steps
+- ✨ **Feature** - Describe your use case
+- ❓ **Question** - I'll answer ASAP
+
+---
+*🤖 NullSec Bot*
+`;
+            }
+            
+            // Post the response
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: response
+            });
+            
+            // Add labels
+            if (labels.length > 0) {
+              try {
+                await github.rest.issues.addLabels({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issue.number,
+                  labels: labels
+                });
+              } catch (e) {
+                console.log('Could not add labels:', e.message);
+              }
+            }
+            
+            console.log(`Responded to issue #${issue.number} from @${author}`);
+            if (isPriority) {
+              console.log('⚠️ PRIORITY: Collaboration or security request!');
+            }
+
   auto-label:
     if: github.event_name == 'pull_request_target' && (github.event.action == 'opened' || github.event.action == 'synchronize')
     runs-on: ubuntu-latest
