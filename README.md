@@ -154,7 +154,7 @@ Independent security researcher building the **bad-antics ./Dev** — a comprehe
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=bad-antics&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&cache_seconds=1800" alt="GitHub Stats" height="300" />
+<img src="https://github-readme-stats.vercel.app/api?username=bad-antics&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&v=1769281365" alt="GitHub Stats" height="300" />
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bad-antics&layout=pie&theme=github_dark&hide_border=true&langs_count=20&hide=html,css,makefile,dockerfile" alt="Top Languages" height="300" />
 
 
