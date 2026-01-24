@@ -5,7 +5,7 @@
 **Security Researcher | Systems Engineer | Open Source Developer**
 
 [![GitHub](https://img.shields.io/badge/GitHub-bad--antics-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
-[![Repositories](https://img.shields.io/badge/Repositories-443-blue?style=for-the-badge)](https://github.com/bad-antics?tab=repositories)
+[![Repositories](https://img.shields.io/badge/Repositories-456-blue?style=for-the-badge)](https://github.com/bad-antics?tab=repositories)
 [![Tools](https://img.shields.io/badge/Security_Tools-135+-red?style=for-the-badge)](https://github.com/bad-antics/nullsec-linux)
 [![Twitter](https://img.shields.io/badge/Twitter-@AnonAntics-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/AnonAntics)
 [![Discord](https://img.shields.io/badge/Discord-killers-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/killers)
@@ -143,7 +143,7 @@ Independent security researcher building the **bad-antics ./Dev** — a comprehe
 
 | Metric | Value |
 |--------|-------|
-| 📦 **Public Repositories** | 443 |
+| 📦 **Public Repositories** | 456 |
 | 🛠️ **Security Tools** | 135+ |
 | 🌍 **Programming Languages** | 15+ |
 | 📱 **Mobile Manufacturers** | 18 |
@@ -154,7 +154,7 @@ Independent security researcher building the **bad-antics ./Dev** — a comprehe
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=bad-antics&show_icons=true&theme=github_dark&hide_border=true&count_private=true&v=1769282161" alt="GitHub Stats" height="300" />
+<img src="https://github-readme-stats.vercel.app/api?username=bad-antics&show_icons=true&theme=github_dark&hide_border=true&count_private=true&v=1769283434" alt="GitHub Stats" height="300" />
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bad-antics&layout=pie&theme=github_dark&hide_border=true&langs_count=20&hide=html,css,makefile,dockerfile" alt="Top Languages" height="300" />
 
 
@@ -192,7 +192,7 @@ Independent security researcher building the **bad-antics ./Dev** — a comprehe
 
 ## 🚀 Community Contributions
 
-Currently contributing NullSec tools to **76 open PRs (6 merged!)** across the security community:
+Currently contributing NullSec tools to **80 open PRs (6 merged!)** across the security community:
 
 | Category | PRs | Highlights |
 |----------|-----|------------|
