@@ -10,7 +10,7 @@ on:
   issues:
     types: [opened, labeled]
   schedule:
-    - cron: '0 9 * * 1'  # Weekly Monday 9am - stale check
+    - cron: '0 9 * * 1'
 
 permissions:
   pull-requests: write
@@ -21,7 +21,6 @@ env:
   STALE_DAYS: 14
 
 jobs:
-  # ========== ISSUE HANDLERS ==========
   welcome-issue:
     if: github.event_name == 'issues' && github.event.action == 'opened'
     runs-on: ubuntu-latest
@@ -34,7 +33,6 @@ jobs:
             const author = issue.user.login;
             const repoOwner = context.repo.owner;
             
-            // Don't respond to own issues
             if (author === repoOwner) return;
             
             const title = issue.title.toLowerCase();
@@ -44,175 +42,137 @@ jobs:
             let labels = [];
             let isPriority = false;
             
-            // === COLLABORATION REQUEST ===
+            // COLLABORATION REQUEST
             if (body.includes('collaborate') || body.includes('team up') || 
                 body.includes('work together') || body.includes('partnership') ||
                 body.includes('join the team') || body.includes('contribute to nullsec') ||
                 title.includes('collaboration') || title.includes('team up')) {
               
-              response = `
-## 👋 Hey @${author}! Thanks for reaching out about collaborating!
-
-I'm **always** excited to connect with fellow security researchers and developers!
-
-### 🤝 Ways to Get Involved:
-
-| Type | Description |
-|------|-------------|
-| 🔧 **Code** | PRs welcome! Check \`good first issue\` labels |
-| 📖 **Docs** | Help with documentation, tutorials, guides |
-| 🧪 **Testing** | Test new features, report bugs |
-| 💡 **Ideas** | Share feature ideas and improvements |
-| 🔬 **Research** | Security research, CVE hunting |
-
-### 📋 Let's Connect:
-
-Could you tell me more about:
-1. **Your background** - What's your expertise area?
-2. **Interest area** - Which NullSec tools interest you most?
-3. **Availability** - How much time can you dedicate?
-4. **Goals** - What do you hope to achieve?
-
-I'll respond personally very soon! 🚀
-
----
-*🤖 NullSec Bot - Flagged as priority for personal follow-up*
-`;
-              labels = ['collaboration', 'priority', 'needs-response'];
+              response = [
+                '## 👋 Hey @' + author + '! Thanks for reaching out about collaborating!',
+                '',
+                "I'm **always** excited to connect with fellow security researchers!",
+                '',
+                '### 🤝 Ways to Get Involved:',
+                '',
+                '| Type | Description |',
+                '|------|-------------|',
+                '| 🔧 **Code** | PRs welcome! |',
+                '| 📖 **Docs** | Help with documentation |',
+                '| 🧪 **Testing** | Test new features, report bugs |',
+                '| 💡 **Ideas** | Share feature ideas |',
+                '| 🔬 **Research** | Security research, CVE hunting |',
+                '',
+                '### 📋 Tell me more about:',
+                '1. Your background/expertise',
+                '2. Which NullSec tools interest you',
+                '3. How much time you can dedicate',
+                '',
+                "I'll respond personally very soon! 🚀",
+                '',
+                '---',
+                '*🤖 NullSec Bot - Flagged as priority*'
+              ].join('\n');
+              labels = ['collaboration', 'priority'];
               isPriority = true;
               
-            // === BUG REPORT ===
+            // BUG REPORT
             } else if (title.includes('bug') || title.includes('error') || 
-                      title.includes('crash') || title.includes('not working') ||
-                      title.includes('broken') || title.includes('fail')) {
+                      title.includes('crash') || title.includes('not working')) {
               
-              response = `
-## 👋 Thanks for the bug report, @${author}!
-
-I'll investigate this ASAP. To help me fix it faster:
-
-### 📋 Please Provide:
-
-- **Environment:** OS, kernel version, architecture
-- **Tool Version:** \`tool --version\` output
-- **Steps to Reproduce:** Exact commands/actions
-- **Expected vs Actual:** What should happen vs what happened
-- **Logs:** Error messages, stack traces, debug output
-
-### 🔍 Quick Checks:
-
-- [ ] Are you using the latest version?
-- [ ] Did you check existing issues for duplicates?
-- [ ] Have you tried with a clean config?
-
-I'll get back to you soon! 🔧
-
----
-*🤖 NullSec Bot*
-`;
+              response = [
+                '## 👋 Thanks for the bug report, @' + author + '!',
+                '',
+                "I'll investigate this ASAP. To help me fix it faster:",
+                '',
+                '### 📋 Please Provide:',
+                '- **Environment:** OS, kernel version',
+                '- **Tool Version:** version output',
+                '- **Steps to Reproduce:** Exact commands',
+                '- **Expected vs Actual:** What happened',
+                '- **Logs:** Error messages if any',
+                '',
+                "I'll get back to you soon! 🔧",
+                '',
+                '---',
+                '*🤖 NullSec Bot*'
+              ].join('\n');
               labels = ['bug', 'needs-triage'];
               
-            // === FEATURE REQUEST / SUGGESTION ===
+            // FEATURE REQUEST
             } else if (title.includes('feature') || title.includes('request') ||
-                      title.includes('suggestion') || title.includes('add support') ||
-                      title.includes('would be nice') || title.includes('enhancement')) {
+                      title.includes('suggestion') || title.includes('add support')) {
               
-              response = `
-## 👋 Thanks for the suggestion, @${author}!
-
-I love hearing ideas from users! ✨
-
-### 📋 To Help Evaluate:
-
-1. **Use Case:** What problem does this solve?
-2. **Current Workaround:** How do you handle this now?
-3. **Priority:** Is this blocking your workflow?
-4. **Implementation Ideas:** Any thoughts on how it could work?
-
-### 📊 What Happens Next:
-
-1. I'll review and consider feasibility
-2. Might ask follow-up questions
-3. If approved, it gets added to the roadmap
-4. You're welcome to submit a PR implementing it!
-
-Thanks for helping improve NullSec! 💪
-
----
-*🤖 NullSec Bot*
-`;
-              labels = ['enhancement', 'needs-triage'];
+              response = [
+                '## 👋 Thanks for the suggestion, @' + author + '!',
+                '',
+                'I love hearing ideas from users! ✨',
+                '',
+                '### 📋 To Help Evaluate:',
+                '1. **Use Case:** What problem does this solve?',
+                '2. **Current Workaround:** How do you handle this now?',
+                '3. **Priority:** Is this blocking your workflow?',
+                '',
+                'Thanks for helping improve NullSec! 💪',
+                '',
+                '---',
+                '*🤖 NullSec Bot*'
+              ].join('\n');
+              labels = ['enhancement'];
               
-            // === QUESTION / HELP ===
+            // QUESTION
             } else if (title.includes('?') || title.includes('how to') || 
-                      title.includes('help') || title.includes('question') ||
-                      body.includes('how do i') || body.includes('can i')) {
+                      title.includes('help') || title.includes('question')) {
               
-              response = `
-## 👋 Hey @${author}! Happy to help!
-
-I'll answer your question soon. In the meantime:
-
-### 📚 Resources:
-
-- 📖 Check the **README** for documentation
-- 🔍 Search **existing issues** for similar questions
-- 📝 Check the **wiki** if available
-
-### 💡 Tips:
-
-If this is about:
-- **Installation** - Include your OS and package manager
-- **Usage** - Share the exact commands you're trying
-- **Integration** - Describe your setup/environment
-
-I'll get back to you shortly! 
-
----
-*🤖 NullSec Bot*
-`;
+              response = [
+                '## 👋 Hey @' + author + '! Happy to help!',
+                '',
+                "I'll answer your question soon. In the meantime:",
+                '',
+                '### 📚 Resources:',
+                '- 📖 Check the **README** for documentation',
+                '- 🔍 Search **existing issues** for similar questions',
+                '',
+                "I'll get back to you shortly!",
+                '',
+                '---',
+                '*🤖 NullSec Bot*'
+              ].join('\n');
               labels = ['question'];
               
-            // === SECURITY VULNERABILITY ===
+            // SECURITY
             } else if (title.includes('security') || title.includes('vulnerability') ||
                       title.includes('cve') || title.includes('exploit')) {
               
-              response = `
-## 🔒 Security Report Received
-
-Thanks @${author} for the security report!
-
-⚠️ **Important:** If this is a sensitive vulnerability, please:
-1. **Do NOT** post full exploit details publicly
-2. Consider using GitHub's private vulnerability reporting
-3. Or email security details privately
-
-I'll review this with high priority and respond ASAP.
-
----
-*🤖 NullSec Bot - Security issues are top priority*
-`;
+              response = [
+                '## 🔒 Security Report Received',
+                '',
+                'Thanks @' + author + ' for the security report!',
+                '',
+                '⚠️ **Important:** If this is a sensitive vulnerability:',
+                '1. Do NOT post full exploit details publicly',
+                '2. Consider using GitHub private vulnerability reporting',
+                '',
+                "I'll review this with high priority!",
+                '',
+                '---',
+                '*🤖 NullSec Bot - Security issues are top priority*'
+              ].join('\n');
               labels = ['security', 'priority'];
               isPriority = true;
               
-            // === DEFAULT WELCOME ===
+            // DEFAULT
             } else {
-              response = `
-## 👋 Thanks for opening this issue, @${author}!
-
-I'll review it and respond soon. 
-
-If this is:
-- 🐛 **Bug** - Please add reproduction steps
-- ✨ **Feature** - Describe your use case
-- ❓ **Question** - I'll answer ASAP
-
----
-*🤖 NullSec Bot*
-`;
+              response = [
+                '## 👋 Thanks for opening this issue, @' + author + '!',
+                '',
+                "I'll review it and respond soon.",
+                '',
+                '---',
+                '*🤖 NullSec Bot*'
+              ].join('\n');
             }
             
-            // Post the response
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -220,7 +180,6 @@ If this is:
               body: response
             });
             
-            // Add labels
             if (labels.length > 0) {
               try {
                 await github.rest.issues.addLabels({
@@ -232,11 +191,6 @@ If this is:
               } catch (e) {
                 console.log('Could not add labels:', e.message);
               }
-            }
-            
-            console.log(`Responded to issue #${issue.number} from @${author}`);
-            if (isPriority) {
-              console.log('⚠️ PRIORITY: Collaboration or security request!');
             }
 
   auto-label:
@@ -251,7 +205,6 @@ If this is:
             const prNumber = pr.number;
             const labels = [];
             
-            // Size labels based on changes
             const additions = pr.additions || 0;
             const deletions = pr.deletions || 0;
             const totalChanges = additions + deletions;
@@ -262,7 +215,6 @@ If this is:
             else if (totalChanges <= 500) labels.push('size/L');
             else labels.push('size/XL');
             
-            // Get files changed
             const { data: files } = await github.rest.pulls.listFiles({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -271,25 +223,16 @@ If this is:
             
             const filenames = files.map(f => f.filename.toLowerCase());
             
-            // Auto-label by file type
             if (filenames.some(f => f.includes('readme') || f.endsWith('.md'))) labels.push('documentation');
-            if (filenames.some(f => f.includes('test') || f.includes('spec'))) labels.push('tests');
             if (filenames.some(f => f.includes('.github/workflows'))) labels.push('ci/cd');
             if (filenames.some(f => f.endsWith('.rs'))) labels.push('rust');
             if (filenames.some(f => f.endsWith('.go'))) labels.push('go');
             if (filenames.some(f => f.endsWith('.py'))) labels.push('python');
-            if (filenames.some(f => f.endsWith('.js') || f.endsWith('.ts'))) labels.push('javascript');
-            if (filenames.some(f => f.endsWith('.c') || f.endsWith('.cpp') || f.endsWith('.h'))) labels.push('c/c++');
-            if (filenames.some(f => f.includes('security') || f.includes('vuln'))) labels.push('security');
-            if (filenames.some(f => f.includes('fix') || f.includes('bug'))) labels.push('bugfix');
             
-            // Check PR title for conventional commits
             const title = pr.title.toLowerCase();
             if (title.startsWith('feat')) labels.push('feature');
             if (title.startsWith('fix')) labels.push('bugfix');
             if (title.startsWith('docs')) labels.push('documentation');
-            if (title.startsWith('chore')) labels.push('chore');
-            if (title.startsWith('refactor')) labels.push('refactor');
             
             if (labels.length > 0) {
               try {
@@ -299,9 +242,8 @@ If this is:
                   issue_number: prNumber,
                   labels: labels
                 });
-                console.log(`Added labels: ${labels.join(', ')}`);
               } catch (e) {
-                console.log('Could not add labels (may not exist):', e.message);
+                console.log('Could not add labels:', e.message);
               }
             }
 
@@ -318,7 +260,6 @@ If this is:
             
             if (prAuthor === repoOwner) return;
             
-            // Check if this is their first PR to this repo
             const { data: prs } = await github.rest.pulls.list({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -329,7 +270,6 @@ If this is:
             const authorPRs = prs.filter(p => p.user.login === prAuthor);
             
             if (authorPRs.length === 1) {
-              // First PR! Add special label and extra welcome
               try {
                 await github.rest.issues.addLabels({
                   owner: context.repo.owner,
@@ -339,11 +279,13 @@ If this is:
                 });
               } catch (e) {}
               
+              const msg = '🎉 **Welcome to the project, @' + prAuthor + '!** This is your first PR here!\n\nI really appreciate you taking the time to contribute. I will review this carefully and get back to you soon.\n\n---\n*🤖 NullSec Bot*';
+              
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: context.payload.pull_request.number,
-                body: `🎉 **Welcome to the project, @${prAuthor}!** This is your first PR here!\n\nI really appreciate you taking the time to contribute. I'll review this carefully and get back to you soon.\n\n---\n*🤖 NullSec Bot*`
+                body: msg
               });
             }
 
@@ -359,26 +301,20 @@ If this is:
             const prNumber = context.payload.pull_request.number;
             const repoOwner = context.repo.owner;
             
-            // Don't respond to own PRs
-            if (prAuthor === repoOwner) {
-              console.log('Skipping - PR from repo owner');
-              return;
-            }
+            if (prAuthor === repoOwner) return;
             
-            const welcomeMessage = `
-            👋 Hey @${prAuthor}! Thanks for opening this PR!
-            
-            I'll review this as soon as I can. Here's what happens next:
-            
-            - 🔍 I'll review your changes
-            - 💬 I may leave some comments or suggestions
-            - ✅ Once everything looks good, I'll merge it
-            
-            If this is your first contribution, welcome to the project! 🎉
-            
-            ---
-            *🤖 Automated response from NullSec Bot*
-            `;
+            const welcomeMessage = [
+              '👋 Hey @' + prAuthor + '! Thanks for opening this PR!',
+              '',
+              "I'll review this as soon as I can. Here's what happens next:",
+              '',
+              '- 🔍 I will review your changes',
+              '- 💬 I may leave some comments or suggestions',
+              '- ✅ Once everything looks good, I will merge it',
+              '',
+              '---',
+              '*🤖 NullSec Bot*'
+            ].join('\n');
             
             await github.rest.issues.createComment({
               owner: context.repo.owner,
@@ -401,33 +337,14 @@ If this is:
             const repoOwner = context.repo.owner;
             const prAuthor = context.payload.pull_request.user.login;
             
-            // Only respond if repo owner reviewed someone else's PR
-            if (reviewer !== repoOwner || prAuthor === repoOwner) {
-              return;
-            }
+            if (reviewer !== repoOwner || prAuthor === repoOwner) return;
             
             let responseMessage = '';
             
             if (review.state === 'approved') {
-              responseMessage = `
-              ✅ **Approved!** 
-              
-              Thanks for your contribution @${prAuthor}! I'll merge this shortly.
-              
-              ---
-              *🤖 Automated response from NullSec Bot*
-              `;
+              responseMessage = '✅ **Approved!**\n\nThanks for your contribution @' + prAuthor + '! I will merge this shortly.\n\n---\n*🤖 NullSec Bot*';
             } else if (review.state === 'changes_requested') {
-              responseMessage = `
-              📝 **Changes Requested**
-              
-              Hey @${prAuthor}, I've left some feedback above. Please take a look and update your PR when you get a chance.
-              
-              Feel free to ask questions if anything is unclear!
-              
-              ---
-              *🤖 Automated response from NullSec Bot*
-              `;
+              responseMessage = '📝 **Changes Requested**\n\nHey @' + prAuthor + ', I have left some feedback above. Please take a look and update your PR when you get a chance.\n\n---\n*🤖 NullSec Bot*';
             }
             
             if (responseMessage) {
@@ -452,46 +369,12 @@ If this is:
             const prNumber = context.payload.issue.number;
             const repoOwner = context.repo.owner;
             
-            // Command responses (anyone can trigger info commands)
             const commands = {
-              '/status': `
-              📊 **PR Status**
-              
-              - **State:** ${context.payload.issue.state}
-              - **Labels:** ${context.payload.issue.labels.map(l => l.name).join(', ') || 'None'}
-              - **Reviewers:** Pending review from maintainer
-              
-              ---
-              *🤖 NullSec Bot*
-              `,
-              '/help': `
-              🤖 **NullSec Bot Commands**
-              
-              | Command | Description | Access |
-              |---------|-------------|--------|
-              | \`/status\` | Check PR status | Anyone |
-              | \`/help\` | Show this help message | Anyone |
-              | \`/ping\` | Check if bot is active | Anyone |
-              | \`/lgtm\` | Approve PR | Owner |
-              | \`/merge\` | Merge PR | Owner |
-              | \`/close\` | Close PR | Owner |
-              | \`/hold\` | Put PR on hold | Owner |
-              | \`/unhold\` | Remove hold | Owner |
-              | \`/wip\` | Mark as work in progress | Owner |
-              | \`/ready\` | Mark as ready for review | Owner |
-              
-              ---
-              *🤖 NullSec Bot*
-              `,
-              '/ping': `
-              🏓 **Pong!** Bot is active and responding.
-              
-              ---
-              *🤖 NullSec Bot*
-              `
+              '/status': '📊 **PR Status**\n\n- **State:** ' + context.payload.issue.state + '\n- **Labels:** ' + (context.payload.issue.labels.map(l => l.name).join(', ') || 'None') + '\n\n---\n*🤖 NullSec Bot*',
+              '/help': '🤖 **NullSec Bot Commands**\n\n| Command | Description | Access |\n|---------|-------------|--------|\n| `/status` | Check PR status | Anyone |\n| `/help` | Show this help | Anyone |\n| `/ping` | Check if bot active | Anyone |\n| `/lgtm` | Approve PR | Owner |\n| `/merge` | Merge PR | Owner |\n| `/close` | Close PR | Owner |\n\n---\n*🤖 NullSec Bot*',
+              '/ping': '🏓 **Pong!** Bot is active.\n\n---\n*🤖 NullSec Bot*'
             };
             
-            // Check if comment is a command
             for (const [cmd, response] of Object.entries(commands)) {
               if (comment.startsWith(cmd)) {
                 await github.rest.issues.createComment({
@@ -504,7 +387,6 @@ If this is:
               }
             }
             
-            // Owner-only commands
             if (commenter === repoOwner) {
               if (comment.includes('/lgtm') || comment.includes('/approve')) {
                 await github.rest.pulls.createReview({
@@ -535,7 +417,7 @@ If this is:
                     owner: context.repo.owner,
                     repo: context.repo.repo,
                     issue_number: prNumber,
-                    body: `❌ **Merge failed:** ${e.message}\n\n---\n*🤖 NullSec Bot*`
+                    body: '❌ **Merge failed:** ' + e.message + '\n\n---\n*🤖 NullSec Bot*'
                   });
                 }
               }
@@ -552,86 +434,6 @@ If this is:
                   repo: context.repo.repo,
                   issue_number: prNumber,
                   body: '🚪 **PR Closed** by maintainer.\n\n---\n*🤖 NullSec Bot*'
-                });
-              }
-              
-              if (comment.includes('/hold')) {
-                try {
-                  await github.rest.issues.addLabels({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    issue_number: prNumber,
-                    labels: ['on-hold']
-                  });
-                  await github.rest.issues.createComment({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    issue_number: prNumber,
-                    body: '⏸️ **PR on hold.** Use `/unhold` to resume.\n\n---\n*🤖 NullSec Bot*'
-                  });
-                } catch (e) {}
-              }
-              
-              if (comment.includes('/unhold')) {
-                try {
-                  await github.rest.issues.removeLabel({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    issue_number: prNumber,
-                    name: 'on-hold'
-                  });
-                  await github.rest.issues.createComment({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    issue_number: prNumber,
-                    body: '▶️ **Hold removed.** PR is back in review queue.\n\n---\n*🤖 NullSec Bot*'
-                  });
-                } catch (e) {}
-              }
-              
-              if (comment.includes('/wip')) {
-                try {
-                  await github.rest.issues.addLabels({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    issue_number: prNumber,
-                    labels: ['work-in-progress']
-                  });
-                  await github.rest.pulls.update({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    pull_number: prNumber,
-                    draft: true
-                  });
-                } catch (e) {}
-                await github.rest.issues.createComment({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: prNumber,
-                  body: '🚧 **Marked as Work in Progress.** Use `/ready` when done.\n\n---\n*🤖 NullSec Bot*'
-                });
-              }
-              
-              if (comment.includes('/ready')) {
-                try {
-                  await github.rest.issues.removeLabel({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    issue_number: prNumber,
-                    name: 'work-in-progress'
-                  });
-                  await github.rest.pulls.update({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    pull_number: prNumber,
-                    draft: false
-                  });
-                } catch (e) {}
-                await github.rest.issues.createComment({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: prNumber,
-                  body: '✅ **Ready for review!**\n\n---\n*🤖 NullSec Bot*'
                 });
               }
             }
@@ -651,10 +453,9 @@ If this is:
             if (author === repoOwner) return;
             
             const messages = [
-              `🎉 **Merged!** Thanks @${author} for this contribution!`,
-              `✨ **Awesome!** Your changes are now part of the project, @${author}!`,
-              `🚀 **Shipped!** Thanks for the great work, @${author}!`,
-              `💪 **Merged!** Really appreciate your contribution, @${author}!`
+              '🎉 **Merged!** Thanks @' + author + ' for this contribution!',
+              '✨ **Awesome!** Your changes are now part of the project, @' + author + '!',
+              '🚀 **Shipped!** Thanks for the great work, @' + author + '!'
             ];
             
             const message = messages[Math.floor(Math.random() * messages.length)];
@@ -663,36 +464,8 @@ If this is:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: pr.number,
-              body: `${message}\n\nYour contribution helps make this project better for everyone. 🙏\n\n---\n*🤖 NullSec Bot*`
+              body: message + '\n\nYour contribution helps make this project better for everyone. 🙏\n\n---\n*🤖 NullSec Bot*'
             });
-
-  conflict-check:
-    if: github.event_name == 'pull_request_target' && github.event.action == 'synchronize'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check for Merge Conflicts
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const pr = context.payload.pull_request;
-            
-            if (pr.mergeable === false) {
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: pr.number,
-                body: `⚠️ **Merge Conflicts Detected**\n\nHey @${pr.user.login}, this PR has merge conflicts that need to be resolved.\n\nPlease rebase or merge the latest changes from the base branch.\n\n---\n*🤖 NullSec Bot*`
-              });
-              
-              try {
-                await github.rest.issues.addLabels({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: pr.number,
-                  labels: ['needs-rebase']
-                });
-              } catch (e) {}
-            }
 
   stale-check:
     if: github.event_name == 'schedule'
@@ -718,7 +491,6 @@ If this is:
               const daysSinceUpdate = Math.floor((now - updatedAt) / (1000 * 60 * 60 * 24));
               
               if (daysSinceUpdate >= staleDays) {
-                // Check if already marked stale
                 const hasStaleLabel = pr.labels.some(l => l.name === 'stale');
                 
                 if (!hasStaleLabel) {
@@ -735,7 +507,7 @@ If this is:
                     owner: context.repo.owner,
                     repo: context.repo.repo,
                     issue_number: pr.number,
-                    body: `👋 Hey @${pr.user.login}, this PR has been inactive for ${daysSinceUpdate} days.\n\nIs this still something you're working on? If so, please update or leave a comment.\n\nIf there's no activity in the next 7 days, this PR may be closed.\n\n---\n*🤖 NullSec Bot*`
+                    body: '👋 Hey @' + pr.user.login + ', this PR has been inactive for ' + daysSinceUpdate + ' days.\n\nIs this still something you are working on? If so, please update or leave a comment.\n\n---\n*🤖 NullSec Bot*'
                   });
                 }
               }
