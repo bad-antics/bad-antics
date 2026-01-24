@@ -7,7 +7,8 @@
 [![GitHub](https://img.shields.io/badge/GitHub-bad--antics-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
 [![Repositories](https://img.shields.io/badge/Repositories-443-blue?style=for-the-badge)](https://github.com/bad-antics?tab=repositories)
 [![Tools](https://img.shields.io/badge/Security_Tools-135+-red?style=for-the-badge)](https://github.com/bad-antics/nullsec-linux)
-[![Discord](https://img.shields.io/badge/Discord-killers-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/killers)
+[![Twitter](https://img.shields.io/badge/Twitter-@AnonAntics-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/AnonAntics)
+&(https://img.shields.io/badge/Discord-killers-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/killers)
 
 </div>
 
@@ -15,7 +16,7 @@
 
 ## 🎯 About
 
-Independent security researcher building the **NullSec Security Framework** — a comprehensive ecosystem of 135+ specialized security tools and a complete Linux distribution. My focus spans cloud security, AI/ML security research, hardware hacking, automotive systems, mobile security, and traditional penetration testing.
+Independent security researcher building the **bad-antics ./Dev** — a comprehensive ecosystem of 135+ specialized security tools and a complete Linux distribution. My focus spans cloud security, AI/ML security research, hardware hacking, automotive systems, mobile security, and traditional penetration testing.
 
 **Core Projects:**
 - 🐧 **NullSec Linux v5.0** — Security distribution with 135+ tools, 5 specialized editions, 4 architectures
@@ -171,7 +172,8 @@ Independent security researcher building the **NullSec Security Framework** — 
 <div align="center">
 
 [![Website](https://img.shields.io/badge/Website-bad--antics.github.io-00C7B7?style=for-the-badge)](https://bad-antics.github.io)
-[![Discord](https://img.shields.io/badge/Discord-killers-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/killers)
+[![Twitter](https://img.shields.io/badge/Twitter-@AnonAntics-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/AnonAntics)
+&(https://img.shields.io/badge/Discord-killers-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/killers)
 [![GitHub](https://img.shields.io/badge/GitHub-443_Repos-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
 
 </div>
