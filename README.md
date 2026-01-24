@@ -184,7 +184,7 @@ Independent security researcher building the **NullSec Security Framework** — 
 
 ## 🚀 Community Contributions
 
-Currently contributing NullSec tools to **62+ open PRs** across the security community:
+Currently contributing NullSec tools to **67+ open PRs** across the security community:
 
 | Category | PRs | Highlights |
 |----------|-----|------------|
