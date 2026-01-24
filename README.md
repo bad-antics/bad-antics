@@ -184,17 +184,21 @@ Independent security researcher building the **NullSec Security Framework** — 
 
 ## 🚀 Community Contributions
 
-Currently contributing NullSec tools to **70+ open PRs** across the security community:
+Currently contributing NullSec tools to **65 open PRs (6 merged!)** across the security community:
 
 | Category | PRs | Highlights |
 |----------|-----|------------|
-| 🏆 **Awesome Lists** | 54+ | awesome-rust, awesome-security, awesome-pentest |
+| 🏆 **Awesome Lists** | 51+ | awesome-rust, awesome-security, awesome-pentest |
 | 🔴 **Red Team Resources** | 5+ | Red-Teaming-Toolkit, RedTeam-Tools |
 | 🐛 **Bug Bounty** | 3+ | nahamsec, KingOfBugBounty |
 | 🎓 **Educational** | 3+ | h4cker, Ethical-Hacking-Tools |
 
-**Featured Submissions:**
-- [The-Art-of-Hacking/h4cker](https://github.com/The-Art-of-Hacking/h4cker) (24.8k ⭐)
+**✅ Merged PRs (Community Accepted):**
+- [The-Art-of-Hacking/h4cker](https://github.com/The-Art-of-Hacking/h4cker/pull/433) (24.8k ⭐) ✅ MERGED
+- [Astrosp/Awesome-OSINT-For-Everything](https://github.com/Astrosp/Awesome-OSINT-For-Everything/pull/52) (2k ⭐) ✅ MERGED
+
+**Pending High-Value PRs:**
+- [wtsxDev/reverse-engineering](https://github.com/wtsxDev/reverse-engineering/pull/45) (9.9k ⭐)
 - [nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters](https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters) (11.7k ⭐)
-- [infosecn1nja/Red-Teaming-Toolkit](https://github.com/infosecn1nja/Red-Teaming-Toolkit) (10k ⭐)
+- [infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking/pull/104) (6.7k ⭐)
 
