@@ -1,0 +1,177 @@
+name: PR Response Bot
+
+on:
+  pull_request_target:
+    types: [opened, reopened]
+  pull_request_review:
+    types: [submitted]
+  issue_comment:
+    types: [created]
+
+permissions:
+  pull-requests: write
+  issues: write
+
+jobs:
+  welcome-new-pr:
+    if: github.event_name == 'pull_request_target' && (github.event.action == 'opened' || github.event.action == 'reopened')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome PR Author
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prAuthor = context.payload.pull_request.user.login;
+            const prNumber = context.payload.pull_request.number;
+            const repoOwner = context.repo.owner;
+            
+            // Don't respond to own PRs
+            if (prAuthor === repoOwner) {
+              console.log('Skipping - PR from repo owner');
+              return;
+            }
+            
+            const welcomeMessage = `
+            👋 Hey @${prAuthor}! Thanks for opening this PR!
+            
+            I'll review this as soon as I can. Here's what happens next:
+            
+            - 🔍 I'll review your changes
+            - 💬 I may leave some comments or suggestions
+            - ✅ Once everything looks good, I'll merge it
+            
+            If this is your first contribution, welcome to the project! 🎉
+            
+            ---
+            *🤖 Automated response from NullSec Bot*
+            `;
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              body: welcomeMessage
+            });
+
+  respond-to-review:
+    if: github.event_name == 'pull_request_review'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Respond to Review
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const review = context.payload.review;
+            const prNumber = context.payload.pull_request.number;
+            const reviewer = review.user.login;
+            const repoOwner = context.repo.owner;
+            const prAuthor = context.payload.pull_request.user.login;
+            
+            // Only respond if repo owner reviewed someone else's PR
+            if (reviewer !== repoOwner || prAuthor === repoOwner) {
+              return;
+            }
+            
+            let responseMessage = '';
+            
+            if (review.state === 'approved') {
+              responseMessage = `
+              ✅ **Approved!** 
+              
+              Thanks for your contribution @${prAuthor}! I'll merge this shortly.
+              
+              ---
+              *🤖 Automated response from NullSec Bot*
+              `;
+            } else if (review.state === 'changes_requested') {
+              responseMessage = `
+              📝 **Changes Requested**
+              
+              Hey @${prAuthor}, I've left some feedback above. Please take a look and update your PR when you get a chance.
+              
+              Feel free to ask questions if anything is unclear!
+              
+              ---
+              *🤖 Automated response from NullSec Bot*
+              `;
+            }
+            
+            if (responseMessage) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: responseMessage
+              });
+            }
+
+  handle-commands:
+    if: github.event_name == 'issue_comment' && github.event.issue.pull_request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Handle Bot Commands
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const comment = context.payload.comment.body.toLowerCase().trim();
+            const commenter = context.payload.comment.user.login;
+            const prNumber = context.payload.issue.number;
+            const repoOwner = context.repo.owner;
+            
+            // Command responses (anyone can trigger info commands)
+            const commands = {
+              '/status': `
+              📊 **PR Status**
+              
+              - **State:** ${context.payload.issue.state}
+              - **Labels:** ${context.payload.issue.labels.map(l => l.name).join(', ') || 'None'}
+              - **Reviewers:** Pending review from maintainer
+              
+              ---
+              *🤖 Automated response from NullSec Bot*
+              `,
+              '/help': `
+              🤖 **NullSec Bot Commands**
+              
+              | Command | Description |
+              |---------|-------------|
+              | \`/status\` | Check PR status |
+              | \`/help\` | Show this help message |
+              | \`/ping\` | Check if bot is active |
+              
+              ---
+              *🤖 Automated response from NullSec Bot*
+              `,
+              '/ping': `
+              🏓 **Pong!** Bot is active and responding.
+              
+              ---
+              *🤖 Automated response from NullSec Bot*
+              `
+            };
+            
+            // Check if comment is a command
+            for (const [cmd, response] of Object.entries(commands)) {
+              if (comment.startsWith(cmd)) {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: prNumber,
+                  body: response
+                });
+                return;
+              }
+            }
+            
+            // Owner-only commands
+            if (commenter === repoOwner) {
+              if (comment.includes('/lgtm') || comment.includes('/approve')) {
+                await github.rest.pulls.createReview({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: prNumber,
+                  event: 'APPROVE',
+                  body: '✅ LGTM! Approved via bot command.'
+                });
+              }
+            }
