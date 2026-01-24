@@ -5,7 +5,7 @@
 **Security Researcher | Systems Engineer | Open Source Developer**
 
 [![GitHub](https://img.shields.io/badge/GitHub-bad--antics-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
-[![Repositories](https://img.shields.io/badge/Repositories-373-blue?style=for-the-badge)](https://github.com/bad-antics?tab=repositories)
+[![Repositories](https://img.shields.io/badge/Repositories-418-blue?style=for-the-badge)](https://github.com/bad-antics?tab=repositories)
 [![Tools](https://img.shields.io/badge/Security_Tools-135+-red?style=for-the-badge)](https://github.com/bad-antics/nullsec-linux)
 [![Discord](https://img.shields.io/badge/Discord-killers-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/killers)
 
@@ -142,7 +142,7 @@ Independent security researcher building the **NullSec Security Framework** — 
 
 | Metric | Value |
 |--------|-------|
-| 📦 **Public Repositories** | 373 |
+| 📦 **Public Repositories** | 418 |
 | 🛠️ **Security Tools** | 135+ |
 | 🌍 **Programming Languages** | 15+ |
 | 📱 **Mobile Manufacturers** | 18 |
@@ -166,7 +166,7 @@ Independent security researcher building the **NullSec Security Framework** — 
 
 [![Website](https://img.shields.io/badge/Website-bad--antics.github.io-00C7B7?style=for-the-badge)](https://bad-antics.github.io)
 [![Discord](https://img.shields.io/badge/Discord-killers-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/killers)
-[![GitHub](https://img.shields.io/badge/GitHub-373_Repos-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
+[![GitHub](https://img.shields.io/badge/GitHub-418_Repos-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
 
 </div>
 
@@ -179,3 +179,22 @@ Independent security researcher building the **NullSec Security Framework** — 
 **© 2024-2026 bad-antics** • Security Engineering & Systems Research
 
 </div>
+
+---
+
+## 🚀 Community Contributions
+
+Currently contributing NullSec tools to **62+ open PRs** across the security community:
+
+| Category | PRs | Highlights |
+|----------|-----|------------|
+| 🏆 **Awesome Lists** | 51+ | awesome-rust, awesome-security, awesome-pentest |
+| 🔴 **Red Team Resources** | 5+ | Red-Teaming-Toolkit, RedTeam-Tools |
+| 🐛 **Bug Bounty** | 3+ | nahamsec, KingOfBugBounty |
+| 🎓 **Educational** | 3+ | h4cker, Ethical-Hacking-Tools |
+
+**Featured Submissions:**
+- [The-Art-of-Hacking/h4cker](https://github.com/The-Art-of-Hacking/h4cker) (24.8k ⭐)
+- [nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters](https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters) (11.7k ⭐)
+- [infosecn1nja/Red-Teaming-Toolkit](https://github.com/infosecn1nja/Red-Teaming-Toolkit) (10k ⭐)
+
