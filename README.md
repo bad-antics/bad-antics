@@ -5,7 +5,7 @@
 **Security Researcher | Systems Engineer | Open Source Developer**
 
 [![GitHub](https://img.shields.io/badge/GitHub-bad--antics-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
-[![Repositories](https://img.shields.io/badge/Repositories-418-blue?style=for-the-badge)](https://github.com/bad-antics?tab=repositories)
+[![Repositories](https://img.shields.io/badge/Repositories-435-blue?style=for-the-badge)](https://github.com/bad-antics?tab=repositories)
 [![Tools](https://img.shields.io/badge/Security_Tools-135+-red?style=for-the-badge)](https://github.com/bad-antics/nullsec-linux)
 [![Discord](https://img.shields.io/badge/Discord-killers-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/killers)
 
@@ -142,7 +142,7 @@ Independent security researcher building the **NullSec Security Framework** — 
 
 | Metric | Value |
 |--------|-------|
-| 📦 **Public Repositories** | 418 |
+| 📦 **Public Repositories** | 435 |
 | 🛠️ **Security Tools** | 135+ |
 | 🌍 **Programming Languages** | 15+ |
 | 📱 **Mobile Manufacturers** | 18 |
@@ -166,7 +166,7 @@ Independent security researcher building the **NullSec Security Framework** — 
 
 [![Website](https://img.shields.io/badge/Website-bad--antics.github.io-00C7B7?style=for-the-badge)](https://bad-antics.github.io)
 [![Discord](https://img.shields.io/badge/Discord-killers-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/killers)
-[![GitHub](https://img.shields.io/badge/GitHub-418_Repos-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
+[![GitHub](https://img.shields.io/badge/GitHub-435_Repos-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
 
 </div>
 
@@ -184,11 +184,11 @@ Independent security researcher building the **NullSec Security Framework** — 
 
 ## 🚀 Community Contributions
 
-Currently contributing NullSec tools to **67+ open PRs** across the security community:
+Currently contributing NullSec tools to **70+ open PRs** across the security community:
 
 | Category | PRs | Highlights |
 |----------|-----|------------|
-| 🏆 **Awesome Lists** | 51+ | awesome-rust, awesome-security, awesome-pentest |
+| 🏆 **Awesome Lists** | 54+ | awesome-rust, awesome-security, awesome-pentest |
 | 🔴 **Red Team Resources** | 5+ | Red-Teaming-Toolkit, RedTeam-Tools |
 | 🐛 **Bug Bounty** | 3+ | nahamsec, KingOfBugBounty |
 | 🎓 **Educational** | 3+ | h4cker, Ethical-Hacking-Tools |
