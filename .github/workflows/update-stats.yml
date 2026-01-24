@@ -1,0 +1,197 @@
+name: Update Profile Stats
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:  # Manual trigger
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-stats.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Update Statistics
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const owner = 'bad-antics';
+            
+            console.log('📊 Fetching repository statistics...');
+            
+            // Get all repos
+            let repos = [];
+            let page = 1;
+            while (true) {
+              const { data } = await github.rest.repos.listForUser({
+                username: owner,
+                per_page: 100,
+                page: page
+              });
+              if (data.length === 0) break;
+              repos = repos.concat(data);
+              page++;
+            }
+            
+            const repoCount = repos.length;
+            console.log(`📦 Total repositories: ${repoCount}`);
+            
+            // Count languages across all repos
+            const langStats = {};
+            let langCount = 0;
+            
+            for (const repo of repos.slice(0, 100)) { // Sample first 100 repos
+              try {
+                const { data: languages } = await github.rest.repos.listLanguages({
+                  owner: owner,
+                  repo: repo.name
+                });
+                
+                for (const [lang, bytes] of Object.entries(languages)) {
+                  langStats[lang] = (langStats[lang] || 0) + bytes;
+                }
+              } catch (e) {
+                // Skip repos with no language data
+              }
+            }
+            
+            // Sort languages by usage
+            const sortedLangs = Object.entries(langStats)
+              .sort((a, b) => b[1] - a[1]);
+            
+            const totalBytes = sortedLangs.reduce((sum, [_, bytes]) => sum + bytes, 0);
+            const topLangs = sortedLangs.slice(0, 10);
+            langCount = sortedLangs.length;
+            
+            console.log(`🌍 Languages detected: ${langCount}`);
+            console.log('Top 10:', topLangs.map(([l, b]) => `${l}: ${((b/totalBytes)*100).toFixed(1)}%`).join(', '));
+            
+            // Count security tools (repos with nullsec- prefix)
+            const securityTools = repos.filter(r => r.name.startsWith('nullsec-')).length;
+            console.log(`🛠️ Security tools: ${securityTools}`);
+            
+            // Get open PRs from community
+            let openPRs = 0;
+            let mergedPRs = 0;
+            
+            try {
+              const { data: issues } = await github.rest.search.issuesAndPullRequests({
+                q: `author:${owner} type:pr is:open`,
+                per_page: 1
+              });
+              openPRs = issues.total_count;
+              
+              const { data: merged } = await github.rest.search.issuesAndPullRequests({
+                q: `author:${owner} type:pr is:merged`,
+                per_page: 1
+              });
+              mergedPRs = merged.total_count;
+            } catch (e) {
+              console.log('Could not fetch PR stats');
+            }
+            
+            // Build language stats markdown
+            const langBadges = topLangs.slice(0, 8).map(([lang, bytes]) => {
+              const pct = ((bytes / totalBytes) * 100).toFixed(1);
+              const colors = {
+                'Rust': 'DEA584', 'Go': '00ADD8', 'Python': '3776AB', 'JavaScript': 'F7DF1E',
+                'TypeScript': '3178C6', 'C++': '00599C', 'C': 'A8B9CC', 'Shell': '89e051',
+                'Zig': 'F7A41D', 'Haskell': '5D4F85', 'Kotlin': '7F52FF', 'Swift': 'FA7343',
+                'Ruby': 'CC342D', 'Java': '007396', 'HTML': 'E34F26', 'CSS': '1572B6'
+              };
+              const color = colors[lang] || '6e7681';
+              return `![${lang}](https://img.shields.io/badge/${encodeURIComponent(lang)}-${pct}%25-${color}?style=flat-square)`;
+            }).join(' ');
+            
+            // Read current README
+            let readme = fs.readFileSync('README.md', 'utf8');
+            
+            // Update repository count badge
+            readme = readme.replace(
+              /Repositories-\d+-blue/g,
+              `Repositories-${repoCount}-blue`
+            );
+            
+            // Update stats table
+            const statsTable = `| Metric | Value |
+|--------|-------|
+| 📦 **Public Repositories** | ${repoCount} |
+| 🛠️ **Security Tools** | ${securityTools}+ |
+| 🌍 **Programming Languages** | ${langCount}+ |
+| 📱 **Mobile Manufacturers** | 18 |
+| 🐧 **Linux Editions** | 9 |
+| 🖥️ **Architectures** | 4 |
+| 🔀 **Community PRs** | ${openPRs} open / ${mergedPRs} merged |`;
+
+            readme = readme.replace(
+              /\| Metric \| Value \|[\s\S]*?\| 🖥️ \*\*Architectures\*\* \| \d+ \|/,
+              statsTable
+            );
+            
+            // Update or add language breakdown section
+            const langSection = `
+### 📈 Language Breakdown
+
+<div align="center">
+
+${langBadges}
+
+</div>
+
+`;
+            
+            if (readme.includes('### 📈 Language Breakdown')) {
+              readme = readme.replace(
+                /### 📈 Language Breakdown[\s\S]*?<\/div>\n\n/,
+                langSection
+              );
+            } else {
+              // Add after statistics section
+              readme = readme.replace(
+                /(## 📊 Statistics[\s\S]*?<\/div>\n\n---)/,
+                `$1\n${langSection}`
+              );
+            }
+            
+            // Update community contributions section
+            readme = readme.replace(
+              /Currently contributing NullSec tools to \*\*\d+ open PRs \(\d+ merged!\)\*\*/,
+              `Currently contributing NullSec tools to **${openPRs} open PRs (${mergedPRs} merged!)**`
+            );
+            
+            // Update timestamp
+            const now = new Date().toISOString().split('T')[0];
+            readme = readme.replace(
+              /Internet Optimized \d{4}-\d{2}-\d{2}/,
+              `Internet Optimized ${now}`
+            );
+            
+            // Write updated README
+            fs.writeFileSync('README.md', readme);
+            
+            console.log('✅ README.md updated with latest stats');
+            
+            // Set outputs for commit message
+            core.setOutput('repo_count', repoCount);
+            core.setOutput('lang_count', langCount);
+            core.setOutput('tool_count', securityTools);
+            
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "📊 Auto-update stats: $(date +%Y-%m-%d)"
+          git push
