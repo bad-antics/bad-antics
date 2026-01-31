@@ -4,91 +4,76 @@
 
 <br><br>
 
+[![Portal](https://img.shields.io/badge/Portal-bad--antics.github.io-00ff00?style=for-the-badge&logo=github&logoColor=white)](https://bad-antics.github.io/)
 &nbsp;&nbsp;
-&nbsp;&nbsp;
-[![Website](https://img.shields.io/badge/Portal-bad--antics.github.io-00ff00?style=for-the-badge&logo=github&logoColor=white)](https://bad-antics.github.io/)
-
-<br>
+[![GitHub](https://img.shields.io/badge/GitHub-bad--antics-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bad-antics)
 
 ---
 
-### 🎯 About
+### 🎯 About Me
 
-Independent security researcher building **bad-antics ./Dev** — a comprehensive ecosystem of<br>
-140+ specialized security tools and a complete Linux distribution.<br>
-Cloud security • AI/ML security • Hardware hacking • Automotive • Mobile • Pentesting
+</div>
+
+> **Security researcher | 523 repos | 135+ tools | 56.4k reach | 54 followers | Contributor to h4cker, awesome-security**
+
+Independent security researcher building **bad-antics ./Dev** — a comprehensive ecosystem of 140+ specialized security tools and a complete Linux distribution. My work spans cloud security, AI/ML security, hardware hacking, automotive systems, mobile security, and advanced systems research.
+
+<div align="center">
 
 ---
-
-<br>
 
 ## 🔮 Julia Security Suite
 
-*Revolutionary high-performance security tools in Julia — 40,000+ lines of next-gen security research*
+*High-performance security research tools in Julia — 40,000+ lines of next-gen code*
+
+</div>
 
 <table>
 <tr>
-<th width="20%">Tool</th>
-<th width="50%">Description</th>
+<th width="15%">Tool</th>
+<th width="55%">Description</th>
 <th width="15%">Lines</th>
 <th width="15%">Link</th>
 </tr>
 <tr>
 <td><strong>🔐 Spectra</strong></td>
-<td>High-performance security toolkit - cryptography, network analysis, forensics</td>
+<td>High-performance security toolkit — cryptography, network analysis, forensics</td>
 <td align="center">8,000+</td>
 <td align="center"><a href="https://github.com/bad-antics/spectra">→</a></td>
 </tr>
 <tr>
 <td><strong>🔮 Oracle</strong></td>
-<td>AI-powered vulnerability discovery engine - ML prediction with 87% accuracy</td>
+<td>AI-powered vulnerability discovery engine — ML prediction with 87% accuracy</td>
 <td align="center">11,389</td>
 <td align="center"><a href="https://github.com/bad-antics/oracle">→</a></td>
 </tr>
 <tr>
 <td><strong>👻 Phantom</strong></td>
-<td>Zero-knowledge proof framework - anonymous disclosure, compliance attestation</td>
+<td>Zero-knowledge proof framework — anonymous disclosure, compliance attestation</td>
 <td align="center">6,302</td>
 <td align="center"><a href="https://github.com/bad-antics/phantom">→</a></td>
 </tr>
 <tr>
 <td><strong>🌀 Vortex</strong></td>
-<td>Real-time threat intelligence fusion - 50+ feeds, ML correlation, detection export</td>
+<td>Real-time threat intelligence fusion — 50+ feeds, ML correlation</td>
 <td align="center">8,406</td>
 <td align="center"><a href="https://github.com/bad-antics/vortex">→</a></td>
 </tr>
 <tr>
 <td><strong>🪞 Mirage</strong></td>
-<td>Adversarial ML toolkit - model attacks, defenses, robustness evaluation</td>
+<td>Adversarial ML toolkit — model attacks, defenses, robustness evaluation</td>
 <td align="center">7,000+</td>
 <td align="center"><a href="https://github.com/bad-antics/mirage">→</a></td>
 </tr>
 </table>
 
-```julia
-# Example: Integrated Security Pipeline
-using Spectra, Oracle, Phantom, Vortex, Mirage
-
-# 1. Discover vulnerabilities with AI
-vulns = Oracle.scan("target_app/")
-
-# 2. Generate anonymous disclosure proofs
-proof = Phantom.create_disclosure_proof(vulns[1])
-
-# 3. Check if target IPs are in threat feeds
-threats = Vortex.search_ioc(engine, target_ip)
-
-# 4. Test ML models for adversarial robustness
-robustness = Mirage.evaluate_robustness(model, test_data)
-```
-
-<br>
+<div align="center">
 
 ---
 
-<br>
-
 ## 💻 Tech Stack
+
+</div>
 
 <table>
 <tr>
@@ -170,26 +155,22 @@ robustness = Mirage.evaluate_robustness(model, test_data)
 </tr>
 </table>
 
-<br>
+<div align="center">
 
 ---
 
-<br>
-
 ## 🐧 NullSec Linux
-
-<br>
 
 *Security-focused Linux distribution with 135+ pre-installed penetration testing tools*
 
-<br>
+</div>
 
 <table>
 <tr>
 <td align="center" width="50%">
 
-<img src="https://img.shields.io/badge/ISO-2.8GB-blue?style=for-the-badge&logoColor=white"/>
-<img src="https://img.shields.io/badge/Edition-Desktop-green?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/ISO-2.8GB-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Edition-Desktop-green?style=for-the-badge"/>
 
 <br><br>
 
@@ -211,17 +192,15 @@ robustness = Mirage.evaluate_robustness(model, test_data)
 </tr>
 </table>
 
-[![NullSec Linux](https://img.shields.io/badge/NullSec_Linux-Download-00ff00?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/bad-antics/nullsec-linux)
+<div align="center">
 
-<br>
+[![NullSec Linux](https://img.shields.io/badge/NullSec_Linux-Download-00ff00?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/bad-antics/nullsec-linux)
 
 ---
 
-<br>
-
 ## 🛠️ Tool Categories
 
-<br>
+</div>
 
 <table>
 <tr>
@@ -284,12 +263,12 @@ robustness = Mirage.evaluate_robustness(model, test_data)
 </td>
 <td align="center" valign="top">
 
-**📶 Cellular/Mobile**
+**📶 Mobile Security**
 
+[nullkia](https://github.com/bad-antics/nullkia) • Framework<br>
 Baseband exploitation<br>
 5G/LTE security testing<br>
 eSIM research tools<br>
-IMSI analysis<br>
 TEE/TrustZone research
 
 </td>
@@ -298,8 +277,6 @@ TEE/TrustZone research
 
 <div align="center">
 
-<br>
-
 ---
 
 ## 📊 GitHub Stats
@@ -307,23 +284,22 @@ TEE/TrustZone research
 <br>
 
 <a href="https://github.com/bad-antics">
-<img height="180" src="https://bad-antics-stats.vercel.app/api?username=bad-antics&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&show_rank=true&rank_icon=github&v=20260131" alt="GitHub Stats" />
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=bad-antics&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" alt="GitHub Stats" />
 </a>
 &nbsp;&nbsp;&nbsp;
 <a href="https://github.com/bad-antics">
 <img height="180" src="https://github-readme-streak-stats-eight.vercel.app/?user=bad-antics&theme=github-dark-blue&hide_border=true" alt="Streak Stats" />
 </a>
 
-![Julia Lines](https://img.shields.io/badge/Julia_Security_Suite-40,000+_lines-9558B2?style=for-the-badge&logo=julia&logoColor=white&labelColor=1a1a1a)
-![Total Reach](https://img.shields.io/badge/Total_Reach-49.8k-00ff00?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a1a)
-
 <br><br>
+
+![Repos](https://img.shields.io/badge/Repositories-523-00ff00?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a1a)
+![Julia Lines](https://img.shields.io/badge/Julia_Security_Suite-40,000+_lines-9558B2?style=for-the-badge&logo=julia&logoColor=white&labelColor=1a1a1a)
+![Total Reach](https://img.shields.io/badge/Total_Reach-56.4k-ff6600?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a1a)
 
 ---
 
 ## 🚀 Community Contributions
-
-<br>
 
 | 📬 Open PRs | ✅ Merged | 📊 Total |
 |:-----------:|:---------:|:--------:|
@@ -332,6 +308,7 @@ TEE/TrustZone research
 <br>
 
 ### ✅ Merged PRs
+
 | Repository | Stars | PR |
 |:-----------|:-----:|:--:|
 | [The-Art-of-Hacking/h4cker](https://github.com/The-Art-of-Hacking/h4cker) | ⭐ 24.9k | [Car-hacking](https://github.com/The-Art-of-Hacking/h4cker/pull/434) |
@@ -354,30 +331,18 @@ TEE/TrustZone research
 | [sbilly/awesome-security](https://github.com/sbilly/awesome-security) | ⭐ 13.9k |
 | [pluja/awesome-privacy](https://github.com/pluja/awesome-privacy) | ⭐ 12k |
 
-<br>
-
 ---
 
 ## 🔗 Connect
 
-<br>
-
 [![Website](https://img.shields.io/badge/bad--antics.github.io-000000?style=for-the-badge&logo=github&logoColor=white)](https://bad-antics.github.io/)
-&nbsp;&nbsp;
-&nbsp;&nbsp;
-&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 [![GitHub](https://img.shields.io/badge/GitHub-bad--antics-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bad-antics)
 
-<br>
-
 ---
-
-<br>
 
 *All tools are intended for authorized security testing and educational purposes only.*
 
 **© 2024-2026 bad-antics • Security Engineering & Systems Research**
-
-<br>
 
 </div>
