@@ -235,9 +235,9 @@ AI/ML security testing framework
 
 <div align="center">
 
-| 📬 Open | ✅ Merged | 📊 Total |
-|:-------:|:---------:|:--------:|
-| **93** | **8** | **101** |
+| 📬 Open | ✅ Merged | 📊 Total | 🌐 Reach |
+|:-------:|:---------:|:--------:|:--------:|
+| **93** | **8** | **101** | **49.8k ⭐** |
 
 </div>
 
@@ -246,13 +246,15 @@ AI/ML security testing framework
 <td width="50%" valign="top">
 
 ### ✅ Merged PRs
-Contributions accepted to major security repositories
+8 contributions accepted to major repositories
 
-- **h4cker** — The Art of Hacking resources
-- **android-security-awesome** — Android security tools
-- **awesome-web-hacking** — Web security resources
-- **awesome-iot** — IoT security tools
-- **awesome-linux-rootkits** — Rootkit research
+- **h4cker** — Car-hacking resources (×2 PRs)
+- **android-security-awesome** — PR #257
+- **awesome-web-hacking** — NullSec tools
+- **awesome-iot** — PR #131
+- **awesome-linux-rootkits** — Detection tools
+- **Awesome-OSINT-For-Everything** — PR #52
+- **awesome-embedded-linux** — GlowBarn
 
 [![h4cker](https://img.shields.io/badge/h4cker-⭐_24.9k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/The-Art-of-Hacking/h4cker)
 [![android-security](https://img.shields.io/badge/android--security-⭐_9.2k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ashishb/android-security-awesome)
@@ -261,10 +263,10 @@ Contributions accepted to major security repositories
 <td width="50%" valign="top">
 
 ### 🕐 Pending Review
-Open PRs awaiting maintainer review
+93 PRs awaiting maintainer review
 
-- **awesome-pentest** — Penetration testing resources
-- **awesome-osint** — OSINT tools & techniques
+- **awesome-pentest** — Penetration testing
+- **awesome-osint** — OSINT tools
 - **awesome-security** — Security resources
 - **awesome-privacy** — Privacy tools
 
