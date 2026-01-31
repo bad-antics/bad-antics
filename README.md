@@ -5,8 +5,8 @@
 **Security Researcher | Systems Engineer | Open Source Developer**
 
 [![GitHub](https://img.shields.io/badge/GitHub-bad--antics-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
-[![Repositories](https://img.shields.io/badge/Repositories-456-blue?style=for-the-badge)](https://github.com/bad-antics?tab=repositories)
-[![Tools](https://img.shields.io/badge/Security_Tools-135+-red?style=for-the-badge)](https://github.com/bad-antics/nullsec-linux)
+[![Repositories](https://img.shields.io/badge/Repositories-520+-blue?style=for-the-badge)](https://github.com/bad-antics?tab=repositories)
+[![Tools](https://img.shields.io/badge/Security_Tools-140+-red?style=for-the-badge)](https://github.com/bad-antics/nullsec-linux)
 
 </div>
 
@@ -14,25 +14,59 @@
 
 ## 🎯 About
 
-Independent security researcher building the **bad-antics ./Dev** — a comprehensive ecosystem of 135+ specialized security tools and a complete Linux distribution. My focus spans cloud security, AI/ML security research, hardware hacking, automotive systems, mobile security, and traditional penetration testing.
+Independent security researcher building the **bad-antics ./Dev** — a comprehensive ecosystem of 140+ specialized security tools, revolutionary Julia security frameworks, and a complete Linux distribution. My focus spans cloud security, AI/ML security research, hardware hacking, automotive systems, mobile security, and traditional penetration testing.
 
 **Core Projects:**
-- 🐧 **NullSec Linux v5.0** — Security distribution with 135+ tools, 5 specialized editions, 4 architectures
+- 🐧 **NullSec Linux v4.2.0** — Security distribution with 140+ tools, 5 specialized editions, 4 architectures
+- 🔮 **Julia Security Suite** — Revolutionary high-performance security frameworks (Spectra, Oracle, Phantom, Vortex, Mirage)
 - 📱 **NullKia v3.0** — Mobile security framework for 18 manufacturers with baseband, cellular, and TEE tools
 - ☁️ **Cloud Security Suite** — AWS, GCP, Azure, Kubernetes, Terraform auditing
 - 🤖 **AI/ML Security Suite** — LLM red teaming, prompt injection, model auditing
 - 🔌 **Hardware Security Suite** — SDR, RFID, CAN bus, JTAG, glitch attacks
-- 🚗 **Automotive Security Suite** — CAN analysis, OBD-II, UDS protocol, key fob reverse engineering
+
+---
+
+## ⚡ Julia Security Suite
+
+Revolutionary high-performance security frameworks written in Julia, designed for speed, elegance, and real-world impact.
+
+| Tool | Description | Lines |
+|------|-------------|-------|
+| [🌈 **Spectra**](https://github.com/bad-antics/spectra) | High-performance security toolkit with 25+ analyzers, NullSec integration | 8,000+ |
+| [🔮 **Oracle**](https://github.com/bad-antics/oracle) | AI-Powered Vulnerability Discovery Engine with ML prediction | 11,000+ |
+| [👻 **Phantom**](https://github.com/bad-antics/phantom) | Zero-Knowledge Proof Security Framework - prove vulns without revealing | 6,300+ |
+| [🌀 **Vortex**](https://github.com/bad-antics/vortex) | Real-time Threat Intelligence Fusion - correlate 50+ feeds with ML | 8,400+ |
+| [🎭 **Mirage**](https://github.com/bad-antics/mirage) | Adversarial ML Toolkit - evasion, poisoning, model extraction | 7,000+ |
+
+**Total: 40,000+ lines of production Julia security code**
+
+```julia
+using Spectra, Oracle, Phantom, Vortex, Mirage
+
+# Scan with AI-powered vulnerability detection
+vulns = Oracle.scan("target_code/", model=:neural)
+
+# Generate ZK proof of vulnerability without revealing details
+proof = Phantom.prove_vulnerability(vulns[1])
+
+# Check threat intel for related IOCs
+intel = Vortex.correlate(vulns[1].indicators)
+
+# Test adversarial robustness
+robust = Mirage.evaluate_model("security_model.onnx")
+```
+
+📚 **[Julia Security Suite Documentation](https://github.com/bad-antics/julia-security-docs)**
 
 ---
 
 ## 🏆 Featured Projects
 
-### 🐧 NullSec Linux v5.0
+### 🐧 NullSec Linux v4.2.0
 
 | Edition | Description | Tools |
 |---------|-------------|-------|
-| [**Standard**](https://github.com/bad-antics/nullsec-linux) | Full security distribution with complete toolkit | 135+ |
+| [**Standard**](https://github.com/bad-antics/nullsec-linux) | Full security distribution with complete toolkit | 140+ |
 | [**Cloud Pentest**](https://github.com/bad-antics/nullsec-linux) | AWS, GCP, Azure, K8s, Terraform security | 6 |
 | [**AI/ML Security**](https://github.com/bad-antics/nullsec-linux) | LLM red team, prompt inject, model audit | 5 |
 | [**Hardware Hacking**](https://github.com/bad-antics/nullsec-linux) | SDR, RFID, CAN, JTAG, glitch attacks | 5 |
@@ -48,7 +82,6 @@ Independent security researcher building the **bad-antics ./Dev** — a comprehe
 | [**Baseband Tools**](https://github.com/bad-antics/nullkia) | Shannon, Qualcomm, MediaTek, Exynos, Apple modem exploitation |
 | [**Cellular Security**](https://github.com/bad-antics/nullkia) | 5G/LTE security, eSIM tools, IMSI analysis, carrier unlock |
 | [**TEE/TrustZone**](https://github.com/bad-antics/nullkia) | Secure Element, BootROM extraction, TrustZone research |
-| [**GUI & Plugins**](https://github.com/bad-antics/nullkia) | Interactive dashboard, extensible plugin architecture |
 
 ### ☁️ Cloud Security Tools
 
@@ -80,16 +113,6 @@ Independent security researcher building the **bad-antics ./Dev** — a comprehe
 | [nullsec-canbus](https://github.com/bad-antics/nullsec-canbus) | CAN bus analysis and injection |
 | [nullsec-jtag](https://github.com/bad-antics/nullsec-jtag) | JTAG/SWD debugging and extraction |
 | [nullsec-glitch](https://github.com/bad-antics/nullsec-glitch) | Voltage glitching and fault injection |
-| [nullsec-uart](https://github.com/bad-antics/nullsec-uart) | UART exploitation toolkit |
-
-### 🚗 Automotive Security Tools
-
-| Tool | Description |
-|------|-------------|
-| [nullsec-carfuzz](https://github.com/bad-antics/nullsec-carfuzz) | Automotive ECU fuzzing framework |
-| [nullsec-obdii](https://github.com/bad-antics/nullsec-obdii) | OBD-II diagnostic exploitation |
-| [nullsec-uds](https://github.com/bad-antics/nullsec-uds) | UDS protocol security testing |
-| [nullsec-keyfob](https://github.com/bad-antics/nullsec-keyfob) | Key fob signal analysis and replay |
 
 ### 🛠️ Core Security Tools
 
@@ -115,7 +138,7 @@ Independent security researcher building the **bad-antics ./Dev** — a comprehe
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![Zig](https://img.shields.io/badge/Zig-F7A41D?style=for-the-badge&logo=zig&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Julia](https://img.shields.io/badge/Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white)
 
 ### Functional & Type-Safe
 ![Haskell](https://img.shields.io/badge/Haskell-5D4F85?style=for-the-badge&logo=haskell&logoColor=white)
@@ -127,7 +150,7 @@ Independent security researcher building the **bad-antics ./Dev** — a comprehe
 ### Mobile & Platform
 ![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![Ada](https://img.shields.io/badge/Ada-02599C?style=for-the-badge&logo=ada&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Nim](https://img.shields.io/badge/Nim-FFE953?style=for-the-badge&logo=nim&logoColor=black)
 ![Crystal](https://img.shields.io/badge/Crystal-000000?style=for-the-badge&logo=crystal&logoColor=white)
 
@@ -141,26 +164,25 @@ Independent security researcher building the **bad-antics ./Dev** — a comprehe
 
 | Metric | Value |
 |--------|-------|
-| 📦 **Public Repositories** | 456 |
-| 🛠️ **Security Tools** | 135+ |
-| 🌍 **Programming Languages** | 15+ |
+| 📦 **Public Repositories** | 520+ |
+| 🛠️ **Security Tools** | 140+ |
+| 🌍 **Programming Languages** | 18+ |
 | 📱 **Mobile Manufacturers** | 18 |
 | 🐧 **Linux Editions** | 9 |
 | 🖥️ **Architectures** | 4 |
+| 🔮 **Julia Security Lines** | 40,000+ |
 
 </div>
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=bad-antics&show_icons=true&theme=github_dark&hide_border=true&count_private=true&v=1769283434" alt="GitHub Stats" height="300" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bad-antics&layout=pie&theme=github_dark&hide_border=true&langs_count=20&hide=html,css,makefile,dockerfile" alt="Top Languages" height="300" />
-
+<img src="https://github-readme-stats.vercel.app/api?username=bad-antics&show_icons=true&theme=github_dark&hide_border=true&count_private=true" alt="GitHub Stats" height="180" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bad-antics&layout=compact&theme=github_dark&hide_border=true&langs_count=12&hide=html,css,makefile,dockerfile" alt="Top Languages" height="180" />
 
 <img src="https://github-readme-streak-stats-eight.vercel.app/?user=bad-antics&theme=github-dark-blue&hide_border=true" alt="GitHub Streak" />
 
 <img src="https://github-profile-trophy.vercel.app/?username=bad-antics&theme=darkhub&no-frame=true&column=7&margin-w=15" alt="Trophies" />
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=bad-antics&theme=github-dark&hide_border=true&area=true" alt="Activity Graph" />
 </div>
 
 ---
@@ -170,9 +192,28 @@ Independent security researcher building the **bad-antics ./Dev** — a comprehe
 <div align="center">
 
 [![Website](https://img.shields.io/badge/Website-bad--antics.github.io-00C7B7?style=for-the-badge)](https://bad-antics.github.io)
-[![GitHub](https://img.shields.io/badge/GitHub-443_Repos-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
+[![GitHub](https://img.shields.io/badge/GitHub-520+_Repos-181717?style=for-the-badge&logo=github)](https://github.com/bad-antics)
+[![Julia Docs](https://img.shields.io/badge/Julia_Security_Docs-9558B2?style=for-the-badge&logo=julia)](https://github.com/bad-antics/julia-security-docs)
 
 </div>
+
+---
+
+## 🚀 Community Contributions
+
+Contributing NullSec tools to **93 open PRs (8 merged!)** across the security community:
+
+| Category | PRs | Highlights |
+|----------|-----|------------|
+| 🏆 **Awesome Lists** | 55+ | awesome-rust, awesome-security, awesome-pentest, awesome-julia |
+| 🔴 **Red Team Resources** | 8+ | Red-Teaming-Toolkit, RedTeam-Tools |
+| 🐛 **Bug Bounty** | 5+ | nahamsec, KingOfBugBounty |
+| 🎓 **Educational** | 5+ | h4cker, Ethical-Hacking-Tools |
+
+**✅ Merged PRs (Community Accepted):**
+- [The-Art-of-Hacking/h4cker](https://github.com/The-Art-of-Hacking/h4cker/pull/433) (24.8k ⭐) ✅ MERGED
+- [Astrosp/Awesome-OSINT-For-Everything](https://github.com/Astrosp/Awesome-OSINT-For-Everything/pull/52) (2k ⭐) ✅ MERGED
+- + 6 more merged PRs
 
 ---
 
@@ -183,29 +224,3 @@ Independent security researcher building the **bad-antics ./Dev** — a comprehe
 **© 2024-2026 bad-antics** • Security Engineering & Systems Research
 
 </div>
-
----
-
-## 🚀 Community Contributions
-
-Currently contributing NullSec tools to **80 open PRs (6 merged!)** across the security community:
-
-| Category | PRs | Highlights |
-|----------|-----|------------|
-| 🏆 **Awesome Lists** | 51+ | awesome-rust, awesome-security, awesome-pentest |
-| 🔴 **Red Team Resources** | 5+ | Red-Teaming-Toolkit, RedTeam-Tools |
-| 🐛 **Bug Bounty** | 3+ | nahamsec, KingOfBugBounty |
-| 🎓 **Educational** | 3+ | h4cker, Ethical-Hacking-Tools |
-
-**✅ Merged PRs (Community Accepted):**
-- [The-Art-of-Hacking/h4cker](https://github.com/The-Art-of-Hacking/h4cker/pull/433) (24.8k ⭐) ✅ MERGED
-- [Astrosp/Awesome-OSINT-For-Everything](https://github.com/Astrosp/Awesome-OSINT-For-Everything/pull/52) (2k ⭐) ✅ MERGED
-
-**Pending High-Value PRs:**
-- [wtsxDev/reverse-engineering](https://github.com/wtsxDev/reverse-engineering/pull/45) (9.9k ⭐)
-- [nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters](https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters) (11.7k ⭐)
-- [infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking/pull/104) (6.7k ⭐)
-
-
-<- Support for SF, OSDN, VPS, Cloudflare R2, Internet Performance optimized -->
-<- Support for SF, OSDN, VPS, Cloudflare R2, Internet Optimized 2026-01-24 -->
