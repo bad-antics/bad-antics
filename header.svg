@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff">
+        <animate attributeName="stop-color" values="#58a6ff;#a371f7;#3fb950;#58a6ff" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#a371f7">
+        <animate attributeName="stop-color" values="#a371f7;#3fb950;#58a6ff;#a371f7" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#3fb950">
+        <animate attributeName="stop-color" values="#3fb950;#58a6ff;#a371f7;#3fb950" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#bg)" rx="10"/>
+  
+  <!-- Animated border -->
+  <rect x="2" y="2" width="796" height="196" fill="none" stroke="url(#textGrad)" stroke-width="2" rx="8" opacity="0.5"/>
+  
+  <!-- Main text -->
+  <text x="400" y="95" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="64" font-weight="bold" fill="url(#textGrad)" filter="url(#glow)">
+    BAD<tspan fill="#3fb950">_</tspan>ANTICS
+    <animate attributeName="opacity" values="1;0.8;1" dur="2s" repeatCount="indefinite"/>
+  </text>
+  
+  <!-- Underscore blink -->
+  <text x="400" y="95" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="64" font-weight="bold">
+    <tspan fill="transparent">BAD</tspan><tspan fill="#3fb950">_</tspan>
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="140" text-anchor="middle" font-family="'Inter', sans-serif" font-size="18" fill="#8b949e">
+    Security Engineering & Systems Research
+  </text>
+  
+  <!-- Stats bar -->
+  <g transform="translate(400, 170)" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12">
+    <text x="-200" fill="#3fb950">523 repos</text>
+    <text x="-80" fill="#8b949e">•</text>
+    <text x="0" fill="#a371f7">135+ tools</text>
+    <text x="80" fill="#8b949e">•</text>
+    <text x="200" fill="#58a6ff">56.4k reach</text>
+  </g>
+</svg>
