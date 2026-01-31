@@ -1,29 +1,40 @@
 <div align="center">
 
-<!-- Animated Header -->
-<img src="header.svg" alt="BAD_ANTICS" width="800"/>
+<!-- Animated Typing Header -->
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=40&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&height=70&lines=BAD_ANTICS;Security+Research;Systems+Engineering" alt="Typing SVG" />
 
 <br>
 
-[![Portal](https://img.shields.io/badge/Portal-bad--antics.github.io-00ff00?style=for-the-badge&logo=github&logoColor=white)](https://bad-antics.github.io/)
-&nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-bad--antics-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bad-antics)
+[![A+ Rating](https://img.shields.io/badge/A+-Rating-3fb950?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
+[![Repos](https://img.shields.io/badge/523-Repos-58a6ff?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics?tab=repositories)
+[![Tools](https://img.shields.io/badge/135+-Tools-a371f7?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
+[![Reach](https://img.shields.io/badge/56.4k-Reach-f85149?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
+
+<br>
+
+[![Portal](https://img.shields.io/badge/🌐_Portal-bad--antics.github.io-00ff00?style=flat-square&labelColor=0d1117)](https://bad-antics.github.io/)
+&nbsp;•&nbsp;
+[![Profile](https://img.shields.io/badge/👤_Profile-bad--antics-181717?style=flat-square&labelColor=0d1117)](https://github.com/bad-antics)
 
 </div>
-
----
-
-> **Security researcher • 523 repos • 135+ tools • 56.4k reach • 54 followers • Contributor to h4cker, awesome-security**
-
-Independent security researcher building **bad-antics ./Dev** — a comprehensive ecosystem of 140+ specialized security tools and a complete Linux distribution. Focus areas include cloud security, AI/ML security, hardware hacking, automotive systems, mobile security, and advanced systems research.
 
 ---
 
 <div align="center">
 
-## 💻 Tech Stack
+**Security researcher** • **523 repos** • **135+ tools** • **56.4k reach** • **54 followers**
+
+*Contributor to h4cker ⭐24.9k • awesome-security • android-security-awesome ⭐9.2k*
 
 </div>
+
+---
+
+Independent security researcher building **bad-antics ./Dev** — a comprehensive ecosystem of **140+ specialized security tools** and a complete Linux distribution. Focus areas include cloud security, AI/ML security, hardware hacking, automotive systems, mobile security, and advanced systems research.
+
+---
+
+## 💻 Tech Stack
 
 <table>
 <tr>
@@ -50,7 +61,7 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 </td>
 <td valign="top" width="33%">
 
-### 📜 Scripting
+### 📜 Scripting & Automation
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
 ![Lua](https://img.shields.io/badge/Lua-2C2D72?style=flat-square&logo=lua&logoColor=white)
@@ -97,29 +108,25 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 
 ---
 
-<div align="center">
-
 ## 🔮 Julia Security Suite
 
-*High-performance security research • 40,000+ lines*
+<div align="center">
+
+*High-performance security research in Julia • 40,000+ lines*
 
 </div>
 
 | Tool | Description | Lines |
 |:-----|:------------|------:|
 | [**🔐 Spectra**](https://github.com/bad-antics/spectra) | Cryptography, network analysis, forensics toolkit | 8,000+ |
-| [**�� Oracle**](https://github.com/bad-antics/oracle) | AI vulnerability discovery — 87% prediction accuracy | 11,389 |
+| [**🔮 Oracle**](https://github.com/bad-antics/oracle) | AI vulnerability discovery — 87% prediction accuracy | 11,389 |
 | [**👻 Phantom**](https://github.com/bad-antics/phantom) | Zero-knowledge proofs for anonymous disclosure | 6,302 |
 | [**🌀 Vortex**](https://github.com/bad-antics/vortex) | Threat intelligence fusion — 50+ feeds, ML correlation | 8,406 |
 | [**🪞 Mirage**](https://github.com/bad-antics/mirage) | Adversarial ML — attacks, defenses, robustness | 7,000+ |
 
 ---
 
-<div align="center">
-
 ## 🚀 Featured Projects
-
-</div>
 
 <table>
 <tr>
@@ -131,7 +138,7 @@ Security-focused distribution with **135+ tools**
 - AMD64, ARM64, RISC-V, Apple Silicon
 - AI-powered threat analysis
 
-[![NullSec](https://img.shields.io/badge/Download-NullSec_Linux-00ff00?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/bad-antics/nullsec-linux)
+[![NullSec](https://img.shields.io/badge/Download-NullSec_Linux-3fb950?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/bad-antics/nullsec-linux)
 
 </td>
 <td width="50%" valign="top">
@@ -174,76 +181,20 @@ Automotive & ECU security
 
 ---
 
-<div align="center">
-
 ## 🛠️ Security Tool Suites
 
-</div>
-
-<table>
-<tr>
-<td align="center" width="16%" valign="top">
-
-**☁️ Cloud**<br><br>
-[cloudaudit](https://github.com/bad-antics/nullsec-cloudaudit)<br>
-[k8sscan](https://github.com/bad-antics/nullsec-k8sscan)<br>
-[awsrecon](https://github.com/bad-antics/nullsec-awsrecon)<br>
-[terraform-scan](https://github.com/bad-antics/nullsec-terraform-scan)
-
-</td>
-<td align="center" width="16%" valign="top">
-
-**🤖 AI/ML**<br><br>
-[llmred](https://github.com/bad-antics/nullsec-llmred)<br>
-[promptinject](https://github.com/bad-antics/nullsec-promptinject)<br>
-[modelaudit](https://github.com/bad-antics/nullsec-modelaudit)<br>
-[adversarial](https://github.com/bad-antics/nullsec-adversarial)
-
-</td>
-<td align="center" width="16%" valign="top">
-
-**🔌 Hardware**<br><br>
-[sdr](https://github.com/bad-antics/nullsec-sdr)<br>
-[rfid](https://github.com/bad-antics/nullsec-rfid)<br>
-[canbus](https://github.com/bad-antics/nullsec-canbus)<br>
-[glitch](https://github.com/bad-antics/nullsec-glitch)
-
-</td>
-<td align="center" width="16%" valign="top">
-
-**🚗 Automotive**<br><br>
-[carfuzz](https://github.com/bad-antics/nullsec-carfuzz)<br>
-[obdii](https://github.com/bad-antics/nullsec-obdii)<br>
-[uds](https://github.com/bad-antics/nullsec-uds)<br>
-[keyfob](https://github.com/bad-antics/nullsec-keyfob)
-
-</td>
-<td align="center" width="16%" valign="top">
-
-**⚙️ Core**<br><br>
-[rkhunt](https://github.com/bad-antics/nullsec-rkhunt)<br>
-[kernspy](https://github.com/bad-antics/nullsec-kernspy)<br>
-[memguard](https://github.com/bad-antics/nullsec-memguard)<br>
-[injector](https://github.com/bad-antics/nullsec-injector)
-
-</td>
-<td align="center" width="16%" valign="top">
-
-**📱 Mobile**<br><br>
-[nullkia](https://github.com/bad-antics/nullkia)<br>
-Baseband<br>
-5G/LTE<br>
-TEE/TrustZone
-
-</td>
-</tr>
-</table>
+| ☁️ Cloud | 🤖 AI/ML | 🔌 Hardware | 🚗 Automotive | ⚙️ Core | 📱 Mobile |
+|:--------:|:--------:|:-----------:|:-------------:|:-------:|:---------:|
+| [cloudaudit](https://github.com/bad-antics/nullsec-cloudaudit) | [llmred](https://github.com/bad-antics/nullsec-llmred) | [sdr](https://github.com/bad-antics/nullsec-sdr) | [carfuzz](https://github.com/bad-antics/nullsec-carfuzz) | [rkhunt](https://github.com/bad-antics/nullsec-rkhunt) | [nullkia](https://github.com/bad-antics/nullkia) |
+| [k8sscan](https://github.com/bad-antics/nullsec-k8sscan) | [promptinject](https://github.com/bad-antics/nullsec-promptinject) | [rfid](https://github.com/bad-antics/nullsec-rfid) | [obdii](https://github.com/bad-antics/nullsec-obdii) | [kernspy](https://github.com/bad-antics/nullsec-kernspy) | Baseband |
+| [awsrecon](https://github.com/bad-antics/nullsec-awsrecon) | [modelaudit](https://github.com/bad-antics/nullsec-modelaudit) | [canbus](https://github.com/bad-antics/nullsec-canbus) | [uds](https://github.com/bad-antics/nullsec-uds) | [memguard](https://github.com/bad-antics/nullsec-memguard) | 5G/LTE |
+| [terraform-scan](https://github.com/bad-antics/nullsec-terraform-scan) | [adversarial](https://github.com/bad-antics/nullsec-adversarial) | [glitch](https://github.com/bad-antics/nullsec-glitch) | [keyfob](https://github.com/bad-antics/nullsec-keyfob) | [injector](https://github.com/bad-antics/nullsec-injector) | TrustZone |
 
 ---
 
-<div align="center">
-
 ## 📊 GitHub Stats
+
+<div align="center">
 
 <a href="https://github.com/bad-antics">
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=bad-antics&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" />
@@ -252,27 +203,29 @@ TEE/TrustZone
 <img height="165" src="https://github-readme-streak-stats-eight.vercel.app/?user=bad-antics&theme=github-dark-blue&hide_border=true" />
 </a>
 
-<br>
-
-![Repos](https://img.shields.io/badge/523-Repositories-3fb950?style=flat-square&labelColor=0d1117)
-![Julia](https://img.shields.io/badge/40k+-Julia_Lines-9558B2?style=flat-square&labelColor=0d1117)
-![Reach](https://img.shields.io/badge/56.4k-Total_Reach-58a6ff?style=flat-square&labelColor=0d1117)
+</div>
 
 ---
 
 ## 🚀 Community Contributions
 
+<div align="center">
+
 | 📬 Open | ✅ Merged | 📊 Total |
 |:-------:|:---------:|:--------:|
-| 93 | 8 | 101 |
+| **93** | **8** | **101** |
 
-**✅ Merged to:** [h4cker](https://github.com/The-Art-of-Hacking/h4cker) ⭐24.9k • [android-security-awesome](https://github.com/ashishb/android-security-awesome) ⭐9.2k • [awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking) ⭐6.7k • [awesome-iot](https://github.com/phodal/awesome-iot) ⭐4.6k • [awesome-linux-rootkits](https://github.com/milabs/awesome-linux-rootkits) ⭐2k
+</div>
+
+**✅ Merged:** [h4cker](https://github.com/The-Art-of-Hacking/h4cker) ⭐24.9k • [android-security-awesome](https://github.com/ashishb/android-security-awesome) ⭐9.2k • [awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking) ⭐6.7k • [awesome-iot](https://github.com/phodal/awesome-iot) ⭐4.6k • [awesome-linux-rootkits](https://github.com/milabs/awesome-linux-rootkits) ⭐2k
 
 **🕐 Pending:** [awesome-pentest](https://github.com/enaqx/awesome-pentest) ⭐25k • [awesome-osint](https://github.com/jivoi/awesome-osint) ⭐24.5k • [awesome-security](https://github.com/sbilly/awesome-security) ⭐13.9k • [awesome-privacy](https://github.com/pluja/awesome-privacy) ⭐12k
 
 ---
 
-[![Portal](https://img.shields.io/badge/bad--antics.github.io-000000?style=for-the-badge&logo=github&logoColor=white)](https://bad-antics.github.io/)
+<div align="center">
+
+[![Portal](https://img.shields.io/badge/🌐_bad--antics.github.io-Visit_Portal-58a6ff?style=for-the-badge&labelColor=0d1117)](https://bad-antics.github.io/)
 
 *For authorized security testing and educational purposes only.*
 
