@@ -211,15 +211,44 @@ Automotive & ECU security
 
 <div align="center">
 
-| 📬 Open | ✅ Merged | 📊 Total |
+| �� Open | ✅ Merged | 📊 Total |
 |:-------:|:---------:|:--------:|
 | **93** | **8** | **101** |
 
 </div>
 
-**✅ Merged:** [h4cker](https://github.com/The-Art-of-Hacking/h4cker) ⭐24.9k • [android-security-awesome](https://github.com/ashishb/android-security-awesome) ⭐9.2k • [awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking) ⭐6.7k • [awesome-iot](https://github.com/phodal/awesome-iot) ⭐4.6k • [awesome-linux-rootkits](https://github.com/milabs/awesome-linux-rootkits) ⭐2k
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**🕐 Pending:** [awesome-pentest](https://github.com/enaqx/awesome-pentest) ⭐25k • [awesome-osint](https://github.com/jivoi/awesome-osint) ⭐24.5k • [awesome-security](https://github.com/sbilly/awesome-security) ⭐13.9k • [awesome-privacy](https://github.com/pluja/awesome-privacy) ⭐12k
+### ✅ Merged PRs
+
+[![h4cker](https://img.shields.io/badge/h4cker-Merged-3fb950?style=flat-square&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/The-Art-of-Hacking/h4cker) ![⭐](https://img.shields.io/badge/24.9k-⭐-yellow?style=flat-square&labelColor=0d1117)
+
+[![android-security-awesome](https://img.shields.io/badge/android--security--awesome-Merged-3fb950?style=flat-square&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/ashishb/android-security-awesome) ![⭐](https://img.shields.io/badge/9.2k-⭐-yellow?style=flat-square&labelColor=0d1117)
+
+[![awesome-web-hacking](https://img.shields.io/badge/awesome--web--hacking-Merged-3fb950?style=flat-square&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/infoslack/awesome-web-hacking) ![⭐](https://img.shields.io/badge/6.7k-⭐-yellow?style=flat-square&labelColor=0d1117)
+
+[![awesome-iot](https://img.shields.io/badge/awesome--iot-Merged-3fb950?style=flat-square&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/phodal/awesome-iot) ![⭐](https://img.shields.io/badge/4.6k-⭐-yellow?style=flat-square&labelColor=0d1117)
+
+[![awesome-linux-rootkits](https://img.shields.io/badge/awesome--linux--rootkits-Merged-3fb950?style=flat-square&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/milabs/awesome-linux-rootkits) ![⭐](https://img.shields.io/badge/2k-⭐-yellow?style=flat-square&labelColor=0d1117)
+
+</td>
+<td width="50%" valign="top">
+
+### 🕐 Pending Review
+
+[![awesome-pentest](https://img.shields.io/badge/awesome--pentest-Pending-d29922?style=flat-square&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/enaqx/awesome-pentest) ![⭐](https://img.shields.io/badge/25k-⭐-yellow?style=flat-square&labelColor=0d1117)
+
+[![awesome-osint](https://img.shields.io/badge/awesome--osint-Pending-d29922?style=flat-square&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/jivoi/awesome-osint) ![⭐](https://img.shields.io/badge/24.5k-⭐-yellow?style=flat-square&labelColor=0d1117)
+
+[![awesome-security](https://img.shields.io/badge/awesome--security-Pending-d29922?style=flat-square&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/sbilly/awesome-security) ![⭐](https://img.shields.io/badge/13.9k-⭐-yellow?style=flat-square&labelColor=0d1117)
+
+[![awesome-privacy](https://img.shields.io/badge/awesome--privacy-Pending-d29922?style=flat-square&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/pluja/awesome-privacy) ![⭐](https://img.shields.io/badge/12k-⭐-yellow?style=flat-square&labelColor=0d1117)
+
+</td>
+</tr>
+</table>
 
 ---
 
