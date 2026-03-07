@@ -6,9 +6,9 @@
 <br>
 
 [![A+ Rating](https://img.shields.io/badge/A+-Rating-3fb950?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
-[![Repos](https://img.shields.io/badge/523-Repos-58a6ff?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics?tab=repositories)
-[![Tools](https://img.shields.io/badge/135+-Tools-a371f7?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
-[![Reach](https://img.shields.io/badge/56.4k-Reach-f85149?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
+[![Repos](https://img.shields.io/badge/706-Repos-58a6ff?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics?tab=repositories)
+[![Tools](https://img.shields.io/badge/140+-Tools-a371f7?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
+[![Reach](https://img.shields.io/badge/186.4k-Reach-f85149?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
 
 <br>
 
@@ -22,9 +22,9 @@
 
 <div align="center">
 
-**Security researcher** • **523 repos** • **135+ tools** • **56.4k reach** • **54 followers**
+**Security researcher** • **706 repos** • **140+ tools** • **186.4k reach** • **202 followers**
 
-*Contributor to h4cker ⭐24.9k • awesome-security • android-security-awesome ⭐9.2k*
+*Contributor to h4cker ⭐25.4k • awesome-security • android-security-awesome ⭐9.3k*
 
 </div>
 
@@ -133,7 +133,7 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 <td width="50%" valign="top">
 
 ### 🐧 NullSec Linux v5.0
-Security-focused distribution with **135+ tools**
+Security-focused distribution with **140+ tools**
 - 5 specialized editions
 - AMD64, ARM64, RISC-V, Apple Silicon
 - AI-powered threat analysis
@@ -237,7 +237,7 @@ AI/ML security testing framework
 
 | 📬 Open | ✅ Merged | 📊 Total | 🌐 Reach |
 |:-------:|:---------:|:--------:|:--------:|
-| **93** | **8** | **101** | **49.8k ⭐** |
+| **132** | **57** | **189** | **186.4k ⭐** |
 
 </div>
 
@@ -246,32 +246,35 @@ AI/ML security testing framework
 <td width="50%" valign="top">
 
 ### ✅ Merged PRs
-8 contributions accepted to major repositories
+57 contributions accepted to major repositories
 
-- **h4cker** — Car-hacking resources (×2 PRs)
+- **h4cker** — Car-hacking resources (×5 PRs)
 - **android-security-awesome** — PR #257
 - **awesome-web-hacking** — NullSec tools
 - **awesome-iot** — PR #131
 - **awesome-linux-rootkits** — Detection tools
 - **Awesome-OSINT-For-Everything** — PR #52
 - **awesome-embedded-linux** — GlowBarn
+- **Awesome-Hacking** — Hacking resources
+- **awesome-flipperzero** — Flipper Zero tools
+- **Checklists** — Pentesting checklists
 
-[![h4cker](https://img.shields.io/badge/h4cker-⭐_24.9k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/The-Art-of-Hacking/h4cker)
-[![android-security](https://img.shields.io/badge/android--security-⭐_9.2k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ashishb/android-security-awesome)
+[![h4cker](https://img.shields.io/badge/h4cker-⭐_25.4k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/The-Art-of-Hacking/h4cker)
+[![android-security](https://img.shields.io/badge/android--security-⭐_9.3k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ashishb/android-security-awesome)
 
 </td>
 <td width="50%" valign="top">
 
 ### 🕐 Pending Review
-93 PRs awaiting maintainer review
+117 PRs awaiting maintainer review
 
 - **awesome-pentest** — Penetration testing
 - **awesome-osint** — OSINT tools
 - **awesome-security** — Security resources
 - **awesome-privacy** — Privacy tools
 
-[![awesome-pentest](https://img.shields.io/badge/awesome--pentest-⭐_25k-d29922?style=for-the-badge&logo=github&logoColor=white)](https://github.com/enaqx/awesome-pentest)
-[![awesome-osint](https://img.shields.io/badge/awesome--osint-⭐_24.5k-d29922?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jivoi/awesome-osint)
+[![awesome-pentest](https://img.shields.io/badge/awesome--pentest-⭐_25.5k-d29922?style=for-the-badge&logo=github&logoColor=white)](https://github.com/enaqx/awesome-pentest)
+[![awesome-osint](https://img.shields.io/badge/awesome--osint-⭐_25.1k-d29922?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jivoi/awesome-osint)
 
 </td>
 </tr>
