@@ -32,13 +32,13 @@
   
   <!-- Main text -->
   <text x="400" y="95" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="64" font-weight="bold" fill="url(#textGrad)" filter="url(#glow)">
-    BAD<tspan fill="#3fb950">_</tspan>ANTICS
+    BAD<tspan fill="#3fb950">-</tspan>ANTICS
     <animate attributeName="opacity" values="1;0.8;1" dur="2s" repeatCount="indefinite"/>
   </text>
   
   <!-- Underscore blink -->
   <text x="400" y="95" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="64" font-weight="bold">
-    <tspan fill="transparent">BAD</tspan><tspan fill="#3fb950">_</tspan>
+    <tspan fill="transparent">BAD</tspan><tspan fill="#3fb950">-</tspan>
     <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
   </text>
   
@@ -53,6 +53,6 @@
     <text x="-80" fill="#8b949e">•</text>
     <text x="0" fill="#a371f7">140+ tools</text>
     <text x="80" fill="#8b949e">•</text>
-    <text x="200" fill="#58a6ff">56.4k reach</text>
+    <text x="200" fill="#58a6ff">1M+ reach</text>
   </g>
 </svg>

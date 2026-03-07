@@ -1,14 +1,14 @@
 <div align="center">
 
 <!-- Animated Typing Header -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=40&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&height=70&lines=BAD_ANTICS;Security+Research;Systems+Engineering" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=40&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&height=70&lines=BAD-ANTICS;Security+Research;Systems+Engineering" alt="Typing SVG" />
 
 <br>
 
 [![A+ Rating](https://img.shields.io/badge/A+-Rating-3fb950?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
 [![Repos](https://img.shields.io/badge/706-Repos-58a6ff?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics?tab=repositories)
 [![Tools](https://img.shields.io/badge/140+-Tools-a371f7?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
-[![Reach](https://img.shields.io/badge/186.4k-Reach-f85149?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
+[![Reach](https://img.shields.io/badge/1M+-Reach-f85149?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
 
 <br>
 
@@ -22,7 +22,7 @@
 
 <div align="center">
 
-**Security researcher** • **706 repos** • **140+ tools** • **186.4k reach** • **202 followers**
+**Security researcher** • **706 repos** • **140+ tools** • **1M+ reach** • **202 followers**
 
 *Contributor to h4cker ⭐25.4k • awesome-security • android-security-awesome ⭐9.3k*
 
@@ -235,9 +235,9 @@ AI/ML security testing framework
 
 <div align="center">
 
-| 📬 Open | ✅ Merged | 📊 Total | 🌐 Reach |
-|:-------:|:---------:|:--------:|:--------:|
-| **132** | **57** | **189** | **186.4k ⭐** |
+| ✅ Merged | 📊 Total | 🌐 Reach |
+|:---------:|:--------:|:--------:|
+| **57** | **189** | **1M+ ⭐** |
 
 </div>
 
@@ -261,20 +261,6 @@ AI/ML security testing framework
 
 [![h4cker](https://img.shields.io/badge/h4cker-⭐_25.4k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/The-Art-of-Hacking/h4cker)
 [![android-security](https://img.shields.io/badge/android--security-⭐_9.3k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ashishb/android-security-awesome)
-
-</td>
-<td width="50%" valign="top">
-
-### 🕐 Pending Review
-117 PRs awaiting maintainer review
-
-- **awesome-pentest** — Penetration testing
-- **awesome-osint** — OSINT tools
-- **awesome-security** — Security resources
-- **awesome-privacy** — Privacy tools
-
-[![awesome-pentest](https://img.shields.io/badge/awesome--pentest-⭐_25.5k-d29922?style=for-the-badge&logo=github&logoColor=white)](https://github.com/enaqx/awesome-pentest)
-[![awesome-osint](https://img.shields.io/badge/awesome--osint-⭐_25.1k-d29922?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jivoi/awesome-osint)
 
 </td>
 </tr>
