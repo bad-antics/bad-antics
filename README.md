@@ -5,7 +5,7 @@
 
 <br>
 
-[![A+ Rating](https://img.shields.io/badge/A+-Rating-3fb950?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
+[![A++ Rating](https://img.shields.io/badge/A++-Rating-3fb950?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
 [![Repos](https://img.shields.io/badge/706-Repos-58a6ff?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics?tab=repositories)
 [![Tools](https://img.shields.io/badge/140+-Tools-a371f7?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
 [![Reach](https://img.shields.io/badge/1M+-Reach-f85149?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
@@ -235,9 +235,11 @@ AI/ML security testing framework
 
 <div align="center">
 
-| ✅ Merged | 📊 Total | 🌐 Reach |
-|:---------:|:--------:|:--------:|
+| ✅ Merged PRs | 📊 Total Submitted | 🌐 Combined Reach |
+|:-------------:|:------------------:|:-----------------:|
 | **57** | **189** | **1M+ ⭐** |
+
+*Accepted contributions across 11 major open-source security projects*
 
 </div>
 
@@ -245,26 +247,56 @@ AI/ML security testing framework
 <tr>
 <td width="50%" valign="top">
 
-### ✅ Merged PRs
-57 contributions accepted to major repositories
+### 🏆 Flagship Contributions
 
-- **h4cker** — Car-hacking resources (×5 PRs)
-- **android-security-awesome** — PR #257
-- **awesome-web-hacking** — NullSec tools
-- **awesome-iot** — PR #131
-- **awesome-linux-rootkits** — Detection tools
-- **Awesome-OSINT-For-Everything** — PR #52
-- **awesome-embedded-linux** — GlowBarn
-- **Awesome-Hacking** — Hacking resources
-- **awesome-flipperzero** — Flipper Zero tools
-- **Checklists** — Pentesting checklists
+| Repository | Stars | Contribution | Status |
+|:-----------|------:|:-------------|:------:|
+| [**h4cker**](https://github.com/The-Art-of-Hacking/h4cker) | ⭐ 25.4k | Car-hacking tools & resources | ×5 PRs ✅ |
+| [**Awesome-Hacking**](https://github.com/Hack-with-Github/Awesome-Hacking) | ⭐ 107.9k | NullSec tools listing | ✅ |
+| [**awesome-flipperzero**](https://github.com/djsime1/awesome-flipperzero) | ⭐ 23k | Flipper Zero payloads & tools | ✅ |
+| [**awesome-pentest**](https://github.com/enaqx/awesome-pentest) | ⭐ 25.5k | Penetration testing tools | ✅ |
+| [**awesome-osint**](https://github.com/jivoi/awesome-osint) | ⭐ 25.1k | OSINT resources | ✅ |
 
-[![h4cker](https://img.shields.io/badge/h4cker-⭐_25.4k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/The-Art-of-Hacking/h4cker)
-[![android-security](https://img.shields.io/badge/android--security-⭐_9.3k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ashishb/android-security-awesome)
+</td>
+<td width="50%" valign="top">
+
+### 🔧 Security & Research
+
+| Repository | Stars | Contribution | Status |
+|:-----------|------:|:-------------|:------:|
+| [**android-security-awesome**](https://github.com/ashishb/android-security-awesome) | ⭐ 9.3k | NullKia mobile tools — PR #257 | ✅ |
+| [**awesome-web-hacking**](https://github.com/infoslack/awesome-web-hacking) | ⭐ 6.8k | NullSec web security tools | ✅ |
+| [**awesome-iot**](https://github.com/HQarroum/awesome-iot) | ⭐ 3.9k | IoT security resources — PR #131 | ✅ |
+| [**Checklists**](https://github.com/netbiosX/Checklists) | ⭐ 2.6k | Pentesting methodology checklists | ✅ |
+| [**bashbunny-payloads**](https://github.com/hak5/bashbunny-payloads) | ⭐ 2.9k | Hak5 Bash Bunny payloads | ✅ |
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+
+### 🐧 Linux & OSINT
+
+| Repository | Stars | Contribution | Status |
+|:-----------|------:|:-------------|:------:|
+| [**awesome-linux-rootkits**](https://github.com/milabs/awesome-linux-rootkits) | ⭐ 2k | RKHunt detection tools | ✅ |
+| [**Awesome-OSINT-For-Everything**](https://github.com/Astrosp/Awesome-OSINT-For-Everything) | ⭐ 2.2k | OSINT collection tools — PR #52 | ✅ |
+| [**awesome-embedded-linux**](https://github.com/fkromer/awesome-embedded-linux) | ⭐ 397 | GlowBarn embedded project | ✅ |
+| [**awesome-security**](https://github.com/sbilly/awesome-security) | ⭐ 14.1k | Security resources & tools | ✅ |
+| [**awesome-privacy**](https://github.com/pluja/awesome-privacy) | ⭐ 18.1k | Privacy-focused tools | ✅ |
 
 </td>
 </tr>
 </table>
+
+<div align="center">
+
+[![h4cker](https://img.shields.io/badge/h4cker-×5_PRs-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/The-Art-of-Hacking/h4cker)
+[![Awesome-Hacking](https://img.shields.io/badge/Awesome--Hacking-⭐_107.9k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hack-with-Github/Awesome-Hacking)
+[![awesome-flipperzero](https://img.shields.io/badge/awesome--flipperzero-⭐_23k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/djsime1/awesome-flipperzero)
+[![android-security](https://img.shields.io/badge/android--security-⭐_9.3k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ashishb/android-security-awesome)
+
+</div>
 
 ---
 
