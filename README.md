@@ -38,7 +38,7 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 
 <table>
 <tr>
-<td valign="top" width="33%">
+<td valign="top">
 
 ### ⚡ Systems & Low-Level
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
@@ -48,8 +48,11 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 ![Zig](https://img.shields.io/badge/Zig-F7A41D?style=flat-square&logo=zig&logoColor=black)
 ![Assembly](https://img.shields.io/badge/ASM-654FF0?style=flat-square&logo=assemblyscript&logoColor=white)
 
+
 </td>
-<td valign="top" width="33%">
+</tr>
+<tr>
+<td valign="top">
 
 ### 🔬 Scientific & HPC
 ![Julia](https://img.shields.io/badge/Julia-9558B2?style=flat-square&logo=julia&logoColor=white)
@@ -58,8 +61,11 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 ![OCaml](https://img.shields.io/badge/OCaml-EC6813?style=flat-square&logo=ocaml&logoColor=white)
 ![Elixir](https://img.shields.io/badge/Elixir-4B275F?style=flat-square&logo=elixir&logoColor=white)
 
+
 </td>
-<td valign="top" width="33%">
+</tr>
+<tr>
+<td valign="top">
 
 ### 📜 Scripting & Automation
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
@@ -67,6 +73,7 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 ![Lua](https://img.shields.io/badge/Lua-2C2D72?style=flat-square&logo=lua&logoColor=white)
 ![Nim](https://img.shields.io/badge/Nim-FFE953?style=flat-square&logo=nim&logoColor=black)
 ![Crystal](https://img.shields.io/badge/Crystal-000000?style=flat-square&logo=crystal&logoColor=white)
+
 
 </td>
 </tr>
@@ -81,7 +88,10 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 ![K8s](https://img.shields.io/badge/K8s-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
 
+
 </td>
+</tr>
+<tr>
 <td valign="top">
 
 ### 🐧 Linux & Embedded
@@ -91,7 +101,10 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 ![RPi](https://img.shields.io/badge/RPi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
 
+
 </td>
+</tr>
+<tr>
 <td valign="top">
 
 ### 🔒 Security Tools
@@ -101,6 +114,7 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 ![IDA](https://img.shields.io/badge/IDA-4B0082?style=flat-square)
 ![Frida](https://img.shields.io/badge/Frida-DC5C23?style=flat-square&logo=frida&logoColor=white)
 ![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square)
+
 
 </td>
 </tr>
@@ -130,7 +144,7 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td valign="top">
 
 ### 🐧 NullSec Linux v5.0
 Security-focused distribution with **140+ tools**
@@ -141,7 +155,9 @@ Security-focused distribution with **140+ tools**
 [![NullSec](https://img.shields.io/badge/Download-NullSec_Linux-3fb950?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/bad-antics/nullsec-linux)
 
 </td>
-<td width="50%" valign="top">
+</tr>
+<tr>
+<td valign="top">
 
 ### 📱 NullKia v3.0
 Mobile security framework — **18 manufacturers**
@@ -165,6 +181,8 @@ Advanced rootkit detection
 [![RKHunt](https://img.shields.io/badge/View-RKHunt-f85149?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/bad-antics/nullsec-rkhunt)
 
 </td>
+</tr>
+<tr>
 <td valign="top">
 
 ### 🚗 BlackFlag
@@ -189,6 +207,8 @@ Multi-cloud security scanner
 [![CloudAudit](https://img.shields.io/badge/View-CloudAudit-58a6ff?style=for-the-badge&logo=amazonaws&logoColor=white)](https://github.com/bad-antics/nullsec-cloudaudit)
 
 </td>
+</tr>
+<tr>
 <td valign="top">
 
 ### 🤖 LLMRed v1.5
