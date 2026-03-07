@@ -245,45 +245,47 @@ AI/ML security testing framework
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td valign="top">
 
 ### 🏆 Flagship Contributions
 
-| Repository | Stars | Contribution | Status |
-|:-----------|------:|:-------------|:------:|
-| [**h4cker**](https://github.com/The-Art-of-Hacking/h4cker) | ⭐ 25.4k | Car-hacking tools & resources | ×5 PRs ✅ |
-| [**Awesome-Hacking**](https://github.com/Hack-with-Github/Awesome-Hacking) | ⭐ 107.9k | NullSec tools listing | ✅ |
-| [**awesome-flipperzero**](https://github.com/djsime1/awesome-flipperzero) | ⭐ 23k | Flipper Zero payloads & tools | ✅ |
-| [**awesome-pentest**](https://github.com/enaqx/awesome-pentest) | ⭐ 25.5k | Penetration testing tools | ✅ |
-| [**awesome-osint**](https://github.com/jivoi/awesome-osint) | ⭐ 25.1k | OSINT resources | ✅ |
-
-</td>
-<td width="50%" valign="top">
-
-### 🔧 Security & Research
-
-| Repository | Stars | Contribution | Status |
-|:-----------|------:|:-------------|:------:|
-| [**android-security-awesome**](https://github.com/ashishb/android-security-awesome) | ⭐ 9.3k | NullKia mobile tools — PR #257 | ✅ |
-| [**awesome-web-hacking**](https://github.com/infoslack/awesome-web-hacking) | ⭐ 6.8k | NullSec web security tools | ✅ |
-| [**awesome-iot**](https://github.com/HQarroum/awesome-iot) | ⭐ 3.9k | IoT security resources — PR #131 | ✅ |
-| [**Checklists**](https://github.com/netbiosX/Checklists) | ⭐ 2.6k | Pentesting methodology checklists | ✅ |
-| [**bashbunny-payloads**](https://github.com/hak5/bashbunny-payloads) | ⭐ 2.9k | Hak5 Bash Bunny payloads | ✅ |
+| Repository | ⭐ Stars | Contribution | Status |
+|:-----------|--------:|:-------------|:------:|
+| [**h4cker**](https://github.com/The-Art-of-Hacking/h4cker) | 25.4k | Car-hacking tools & resources | ×5 PRs ✅ |
+| [**Awesome-Hacking**](https://github.com/Hack-with-Github/Awesome-Hacking) | 107.9k | NullSec tools listing | ✅ |
+| [**awesome-flipperzero**](https://github.com/djsime1/awesome-flipperzero) | 23k | Flipper Zero payloads & tools | ✅ |
+| [**awesome-pentest**](https://github.com/enaqx/awesome-pentest) | 25.5k | Penetration testing tools | ✅ |
+| [**awesome-osint**](https://github.com/jivoi/awesome-osint) | 25.1k | OSINT resources | ✅ |
 
 </td>
 </tr>
 <tr>
-<td colspan="2" valign="top">
+<td valign="top">
+
+### 🔧 Security & Research
+
+| Repository | ⭐ Stars | Contribution | Status |
+|:-----------|--------:|:-------------|:------:|
+| [**android-security-awesome**](https://github.com/ashishb/android-security-awesome) | 9.3k | NullKia mobile tools — PR #257 | ✅ |
+| [**awesome-web-hacking**](https://github.com/infoslack/awesome-web-hacking) | 6.8k | NullSec web security tools | ✅ |
+| [**awesome-iot**](https://github.com/HQarroum/awesome-iot) | 3.9k | IoT security resources — PR #131 | ✅ |
+| [**Checklists**](https://github.com/netbiosX/Checklists) | 2.6k | Pentesting methodology checklists | ✅ |
+| [**bashbunny-payloads**](https://github.com/hak5/bashbunny-payloads) | 2.9k | Hak5 Bash Bunny payloads | ✅ |
+
+</td>
+</tr>
+<tr>
+<td valign="top">
 
 ### 🐧 Linux & OSINT
 
-| Repository | Stars | Contribution | Status |
-|:-----------|------:|:-------------|:------:|
-| [**awesome-linux-rootkits**](https://github.com/milabs/awesome-linux-rootkits) | ⭐ 2k | RKHunt detection tools | ✅ |
-| [**Awesome-OSINT-For-Everything**](https://github.com/Astrosp/Awesome-OSINT-For-Everything) | ⭐ 2.2k | OSINT collection tools — PR #52 | ✅ |
-| [**awesome-embedded-linux**](https://github.com/fkromer/awesome-embedded-linux) | ⭐ 397 | GlowBarn embedded project | ✅ |
-| [**awesome-security**](https://github.com/sbilly/awesome-security) | ⭐ 14.1k | Security resources & tools | ✅ |
-| [**awesome-privacy**](https://github.com/pluja/awesome-privacy) | ⭐ 18.1k | Privacy-focused tools | ✅ |
+| Repository | ⭐ Stars | Contribution | Status |
+|:-----------|--------:|:-------------|:------:|
+| [**awesome-linux-rootkits**](https://github.com/milabs/awesome-linux-rootkits) | 2k | RKHunt detection tools | ✅ |
+| [**Awesome-OSINT-For-Everything**](https://github.com/Astrosp/Awesome-OSINT-For-Everything) | 2.2k | OSINT collection tools — PR #52 | ✅ |
+| [**awesome-embedded-linux**](https://github.com/fkromer/awesome-embedded-linux) | 397 | GlowBarn embedded project | ✅ |
+| [**awesome-security**](https://github.com/sbilly/awesome-security) | 14.1k | Security resources & tools | ✅ |
+| [**awesome-privacy**](https://github.com/pluja/awesome-privacy) | 18.1k | Privacy-focused tools | ✅ |
 
 </td>
 </tr>
