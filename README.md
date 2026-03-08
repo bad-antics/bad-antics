@@ -221,7 +221,7 @@ AI/ML security testing framework
 <div align="center">
 
 <a href="https://github.com/bad-antics">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=bad-antics&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" />
+<img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=bad-antics&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" />
 </a>
 <a href="https://github.com/bad-antics">
 <img height="165" src="https://github-readme-streak-stats-eight.vercel.app/?user=bad-antics&theme=github-dark-blue&hide_border=true" />
