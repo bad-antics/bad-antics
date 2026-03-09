@@ -22,7 +22,7 @@
 
 <div align="center">
 
-**Security researcher** • **706 repos** • **140+ tools** • **1M+ reach** • **202 followers**
+**Security researcher** • **706 repos** • **140+ tools** • **1M+ reach** •
 
 *Contributor to h4cker ⭐25.4k • awesome-security • android-security-awesome ⭐9.3k*
 
