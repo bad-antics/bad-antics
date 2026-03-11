@@ -2,11 +2,10 @@
 
 <!-- Animated Typing Header -->
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=40&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&height=70&lines=BAD-ANTICS;Security+Research;Systems+Engineering" alt="Typing SVG" />
-
 <br>
 
 [![A++ Rating](https://img.shields.io/badge/A++-Rating-3fb950?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
-[![Repos](https://img.shields.io/badge/706-Repos-58a6ff?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics?tab=repositories)
+[![Repos](https://img.shields.io/badge/708-Repos-58a6ff?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics?tab=repositories)
 [![Tools](https://img.shields.io/badge/140+-Tools-a371f7?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
 [![Reach](https://img.shields.io/badge/1M+-Reach-f85149?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
 
@@ -22,7 +21,7 @@
 
 <div align="center">
 
-**Security researcher** • **706 repos** • **140+ tools** • **1M+ reach** •
+**Security researcher** • **708 repos** • **140+ tools** • **1M+ reach**
 
 *Contributor to h4cker ⭐25.4k • awesome-security • android-security-awesome ⭐9.3k*
 
@@ -118,7 +117,7 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 
 | Tool | Description | Lines |
 |:-----|:------------|------:|
-| [**🔐 Spectra**](https://github.com/bad-antics/spectra) | Cryptography, network analysis, forensics toolkit | 8,000+ |
+| [**�� Spectra**](https://github.com/bad-antics/spectra) | Cryptography, network analysis, forensics toolkit | 8,000+ |
 | [**🔮 Oracle**](https://github.com/bad-antics/oracle) | AI vulnerability discovery — 87% prediction accuracy | 11,389 |
 | [**👻 Phantom**](https://github.com/bad-antics/phantom) | Zero-knowledge proofs for anonymous disclosure | 6,302 |
 | [**🌀 Vortex**](https://github.com/bad-antics/vortex) | Threat intelligence fusion — 50+ feeds, ML correlation | 8,406 |
@@ -143,6 +142,19 @@ Security-focused distribution with **140+ tools**
 </td>
 <td width="50%" valign="top">
 
+### 🪓 LogReaper ⭐69
+High-speed log analysis & forensics
+- Blazing fast pattern matching
+- Forensic timeline reconstruction
+- Part of NullSec Toolkit
+
+[![LogReaper](https://img.shields.io/badge/View-LogReaper-f85149?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/bad-antics/nullsec-logreaper)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
 ### 📱 NullKia v3.0
 Mobile security framework — **18 manufacturers**
 - Baseband exploitation
@@ -152,8 +164,6 @@ Mobile security framework — **18 manufacturers**
 [![NullKia](https://img.shields.io/badge/View-NullKia-a371f7?style=for-the-badge&logo=android&logoColor=white)](https://github.com/bad-antics/nullkia)
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 🔍 RKHunt v2.5
@@ -165,19 +175,19 @@ Advanced rootkit detection
 [![RKHunt](https://img.shields.io/badge/View-RKHunt-f85149?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/bad-antics/nullsec-rkhunt)
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🚗 BlackFlag
 Automotive & ECU security
 - CAN bus, OBD-II, UDS
 - Key fob analysis
-- ECU fuzzing
+- ECU fuzzing & tuning
 
-[![BlackFlag](https://img.shields.io/badge/View-BlackFlag-d29922?style=for-the-badge&logo=car&logoColor=white)](https://github.com/bad-antics/blackflag)
+[![BlackFlag](https://img.shields.io/badge/View-BlackFlag-d29922?style=for-the-badge)](https://github.com/bad-antics/blackflag)
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### ☁️ CloudAudit v2.0
@@ -189,6 +199,8 @@ Multi-cloud security scanner
 [![CloudAudit](https://img.shields.io/badge/View-CloudAudit-58a6ff?style=for-the-badge&logo=amazonaws&logoColor=white)](https://github.com/bad-antics/nullsec-cloudaudit)
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🤖 LLMRed v1.5
@@ -200,8 +212,104 @@ AI/ML security testing framework
 [![LLMRed](https://img.shields.io/badge/View-LLMRed-ff6b6b?style=for-the-badge&logo=openai&logoColor=white)](https://github.com/bad-antics/nullsec-llmred)
 
 </td>
+<td width="50%" valign="top">
+
+### 🛡️ RCE Shield
+RCE hardening for PC gamers
+- Game launcher & anti-cheat scanning
+- Mod & overlay vulnerability checks
+- Network & peripheral security
+
+[![RCE Shield](https://img.shields.io/badge/View-RCE_Shield-58a6ff?style=for-the-badge)](https://github.com/bad-antics/rce-shield)
+
+</td>
 </tr>
 </table>
+
+---
+
+## 🔥 Unleash Hell Collection
+
+<div align="center">
+
+*Hellfire-themed packs for Flipper Zero & WiFi Pineapple Pager*
+
+</div>
+
+| Device | Theme | Components | Repo |
+|:-------|:------|:-----------|:-----|
+| 🐬 Flipper Zero | 10 hellfire animations, 88 frames | Demon skulls, pentagrams, fire, chains, lightning | [![Repo](https://img.shields.io/badge/-Flipper-ff5500?style=flat-square)](https://github.com/bad-antics/nullsec-unleash-hell) |
+| 🍍 Pineapple Pager | 113 themed UI components | Boot animation, dashboards, dialogs, alerts, keyboards | [![Repo](https://img.shields.io/badge/-Pager-ff5500?style=flat-square)](https://github.com/bad-antics/nullsec-unleash-hell-pager) |
+
+---
+
+## 🍍🐬 Device Suites
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🍍 Pineapple Suite ⭐25
+**96+ WiFi Pineapple Pager payloads** across 13 categories
+- Attack, Recon, Capture, Stealth
+- Interception, Exfiltration & more
+
+[![Pineapple Suite](https://img.shields.io/badge/View-Pineapple_Suite-3fb950?style=for-the-badge)](https://github.com/bad-antics/nullsec-pineapple-suite)
+
+</td>
+<td width="50%" valign="top">
+
+### 🐬 Flipper Suite ⭐16
+**430+ Flipper Zero files**
+- 80 BadUSB payloads, 40 SubGHz signals
+- 16 IR remotes, NFC, RFID, animations
+
+[![Flipper Suite](https://img.shields.io/badge/View-Flipper_Suite-3fb950?style=for-the-badge)](https://github.com/bad-antics/nullsec-flipper-suite)
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🐬 PineFlip Ecosystem
+
+<div align="center">
+
+*Unified management tools for Flipper Zero & WiFi Pineapple*
+
+</div>
+
+| Tool | Description |
+|:-----|:------------|
+| [**PineFlip**](https://github.com/bad-antics/pineflip) ⭐4 | GTK4/libadwaita companion app — screen mirroring, file manager, firmware |
+| [**PineFlip Desktop**](https://github.com/bad-antics/pineflip-desktop-app) | Python desktop device manager |
+| [**PineFlip Manager**](https://github.com/bad-antics/pineflip-manager) | Web-based management dashboard |
+| [**PineFlip Native**](https://github.com/bad-antics/pineflip-manager-native) | Native Flipper + Pineapple management tool |
+| [**PineFlip Web**](https://github.com/bad-antics/pineflip-web-app) | Flask remote device management |
+
+---
+
+## 🖥️ N01D Suite
+
+<div align="center">
+
+*Security-focused desktop applications*
+
+</div>
+
+| App | Description |
+|:----|:------------|
+| [**n01d-forge**](https://github.com/bad-antics/n01d-forge) ⭐9 | Secure image burner — LUKS, VeraCrypt, secure erase, hash verification |
+| [**n01d-machine**](https://github.com/bad-antics/n01d-machine) ⭐8 | VM manager — sandboxing, Tor, VPN & network isolation |
+| [**n01d-media**](https://github.com/bad-antics/n01d-media) | Unified media player, editor & encoder — FFmpeg powered |
+| [**n01d-docker**](https://github.com/bad-antics/n01d-docker) | Custom security & dev containers — pentest, Julia, CTF, VPN |
+| [**n01d-overwatch**](https://github.com/bad-antics/n01d-overwatch) | Real-time global conflict OSINT dashboard |
+| [**n01d-term**](https://github.com/bad-antics/n01d-term) | Modern terminal emulator with tabs |
+| [**n01d-sysmon**](https://github.com/bad-antics/n01d-sysmon) | Real-time system monitor |
+| [**n01d-notes**](https://github.com/bad-antics/n01d-notes) | Markdown notes with live preview |
+| [**n01d-book-reader**](https://github.com/bad-antics/n01d-book-reader) | Self-hosted eBook library & OPDS server |
+| [**n01d-timemachine**](https://github.com/bad-antics/n01d-timemachine) | Classic computing emulator — C64, Amiga, ZX Spectrum, DOS |
 
 ---
 
@@ -213,6 +321,7 @@ AI/ML security testing framework
 | [k8sscan](https://github.com/bad-antics/nullsec-k8sscan) | [promptinject](https://github.com/bad-antics/nullsec-promptinject) | [rfid](https://github.com/bad-antics/nullsec-rfid) | [obdii](https://github.com/bad-antics/nullsec-obdii) | [kernspy](https://github.com/bad-antics/nullsec-kernspy) | Baseband |
 | [awsrecon](https://github.com/bad-antics/nullsec-awsrecon) | [modelaudit](https://github.com/bad-antics/nullsec-modelaudit) | [canbus](https://github.com/bad-antics/nullsec-canbus) | [uds](https://github.com/bad-antics/nullsec-uds) | [memguard](https://github.com/bad-antics/nullsec-memguard) | 5G/LTE |
 | [terraform-scan](https://github.com/bad-antics/nullsec-terraform-scan) | [adversarial](https://github.com/bad-antics/nullsec-adversarial) | [glitch](https://github.com/bad-antics/nullsec-glitch) | [keyfob](https://github.com/bad-antics/nullsec-keyfob) | [injector](https://github.com/bad-antics/nullsec-injector) | TrustZone |
+| | [prompt-armor](https://github.com/bad-antics/nullsec-prompt-armor) | | [blackflag-ecu](https://github.com/bad-antics/blackflag-ecu) | [logreaper](https://github.com/bad-antics/nullsec-logreaper) | |
 
 ---
 
@@ -231,7 +340,7 @@ AI/ML security testing framework
 
 ---
 
-## 🤝 Community Contributions
+## �� Community Contributions
 
 <div align="center">
 
