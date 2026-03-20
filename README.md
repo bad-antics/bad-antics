@@ -5,7 +5,7 @@
 <br>
 
 [![A++ Rating](https://img.shields.io/badge/A++-Rating-3fb950?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
-[![Repos](https://img.shields.io/badge/708-Repos-58a6ff?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics?tab=repositories)
+[![Repos](https://img.shields.io/badge/719-Repos-58a6ff?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics?tab=repositories)
 [![Tools](https://img.shields.io/badge/140+-Tools-a371f7?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
 [![Reach](https://img.shields.io/badge/1M+-Reach-f85149?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
 
@@ -21,7 +21,7 @@
 
 <div align="center">
 
-**Security researcher** • **708 repos** • **140+ tools** • **1M+ reach**
+**Security researcher** • **719 repos** • **140+ tools** • **1M+ reach**
 
 *Contributor to h4cker ⭐25.4k • awesome-security • android-security-awesome ⭐9.3k*
 
@@ -348,7 +348,7 @@ RCE hardening for PC gamers
 |:-------------:|:------------------:|:-----------------:|
 | **57** | **189** | **1M+ ⭐** |
 
-*Accepted contributions across 11 major open-source security projects*
+*Accepted contributions across 15 major open-source security projects*
 
 </div>
 
