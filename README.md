@@ -5,7 +5,7 @@
 <br>
 
 [![A++ Rating](https://img.shields.io/badge/A++-Rating-3fb950?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
-[![Repos](https://img.shields.io/badge/719-Repos-58a6ff?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics?tab=repositories)
+[![Repos](https://img.shields.io/badge/732-Repos-58a6ff?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics?tab=repositories)
 [![Tools](https://img.shields.io/badge/140+-Tools-a371f7?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
 [![Reach](https://img.shields.io/badge/1M+-Reach-f85149?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
 
@@ -21,9 +21,9 @@
 
 <div align="center">
 
-**Security researcher** • **719 repos** • **140+ tools** • **1M+ reach**
+**Security researcher** • **732 repos** • **140+ tools** • **1M+ reach**
 
-*Contributor to h4cker ⭐25.4k • awesome-security • android-security-awesome ⭐9.3k*
+*Contributor to h4cker ⭐25.6k • awesome-security • android-security-awesome ⭐9.3k*
 
 </div>
 
@@ -142,7 +142,7 @@ Security-focused distribution with **140+ tools**
 </td>
 <td width="50%" valign="top">
 
-### 🪓 LogReaper ⭐69
+### 🪓 LogReaper ⭐72
 High-speed log analysis & forensics
 - Blazing fast pattern matching
 - Forensic timeline reconstruction
@@ -249,7 +249,7 @@ RCE hardening for PC gamers
 <tr>
 <td width="50%" valign="top">
 
-### 🍍 Pineapple Suite ⭐25
+### 🍍 Pineapple Suite ⭐31
 **96+ WiFi Pineapple Pager payloads** across 13 categories
 - Attack, Recon, Capture, Stealth
 - Interception, Exfiltration & more
@@ -259,7 +259,7 @@ RCE hardening for PC gamers
 </td>
 <td width="50%" valign="top">
 
-### 🐬 Flipper Suite ⭐16
+### 🐬 Flipper Suite ⭐24
 **430+ Flipper Zero files**
 - 80 BadUSB payloads, 40 SubGHz signals
 - 16 IR remotes, NFC, RFID, animations
@@ -346,9 +346,9 @@ RCE hardening for PC gamers
 
 | ✅ Merged PRs | 📊 Total Submitted | 🌐 Combined Reach |
 |:-------------:|:------------------:|:-----------------:|
-| **57** | **189** | **1M+ ⭐** |
+| **60** | **195** | **1M+ ⭐** |
 
-*Accepted contributions across 15 major open-source security projects*
+*Accepted contributions across 17 major open-source security projects*
 
 </div>
 
@@ -360,11 +360,11 @@ RCE hardening for PC gamers
 
 | Repository | ⭐ Stars | Contribution | Status |
 |:-----------|--------:|:-------------|:------:|
-| [**h4cker**](https://github.com/The-Art-of-Hacking/h4cker) | 25.4k | Car-hacking tools & resources | ×5 PRs ✅ |
-| [**Awesome-Hacking**](https://github.com/Hack-with-Github/Awesome-Hacking) | 107.9k | NullSec tools listing | ✅ |
+| [**h4cker**](https://github.com/The-Art-of-Hacking/h4cker) | 25.6k | Car-hacking tools & resources | ×5 PRs ✅ |
+| [**Awesome-Hacking**](https://github.com/Hack-with-Github/Awesome-Hacking) | 108.8k | NullSec tools listing | ✅ |
 | [**awesome-flipperzero**](https://github.com/djsime1/awesome-flipperzero) | 23k | Flipper Zero payloads & tools | ✅ |
-| [**awesome-pentest**](https://github.com/enaqx/awesome-pentest) | 25.5k | Penetration testing tools | ✅ |
-| [**awesome-osint**](https://github.com/jivoi/awesome-osint) | 25.1k | OSINT resources | ✅ |
+| [**awesome-pentest**](https://github.com/enaqx/awesome-pentest) | 25.6k | Penetration testing tools | ✅ |
+| [**awesome-osint**](https://github.com/jivoi/awesome-osint) | 25.4k | OSINT resources | ✅ |
 
 </td>
 </tr>
@@ -394,7 +394,7 @@ RCE hardening for PC gamers
 | [**Awesome-OSINT-For-Everything**](https://github.com/Astrosp/Awesome-OSINT-For-Everything) | 2.2k | OSINT collection tools — PR #52 | ✅ |
 | [**awesome-embedded-linux**](https://github.com/fkromer/awesome-embedded-linux) | 397 | GlowBarn embedded project | ✅ |
 | [**awesome-security**](https://github.com/sbilly/awesome-security) | 14.1k | Security resources & tools | ✅ |
-| [**awesome-privacy**](https://github.com/pluja/awesome-privacy) | 18.1k | Privacy-focused tools | ✅ |
+| [**awesome-privacy**](https://github.com/pluja/awesome-privacy) | 18.3k | Privacy-focused tools | ✅ |
 
 </td>
 </tr>
@@ -403,7 +403,7 @@ RCE hardening for PC gamers
 <div align="center">
 
 [![h4cker](https://img.shields.io/badge/h4cker-×5_PRs-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/The-Art-of-Hacking/h4cker)
-[![Awesome-Hacking](https://img.shields.io/badge/Awesome--Hacking-⭐_107.9k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hack-with-Github/Awesome-Hacking)
+[![Awesome-Hacking](https://img.shields.io/badge/Awesome--Hacking-⭐_108.8k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hack-with-Github/Awesome-Hacking)
 [![awesome-flipperzero](https://img.shields.io/badge/awesome--flipperzero-⭐_23k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/djsime1/awesome-flipperzero)
 [![android-security](https://img.shields.io/badge/android--security-⭐_9.3k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ashishb/android-security-awesome)
 
