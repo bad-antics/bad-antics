@@ -1,37 +1,91 @@
 <div align="center">
 
-<!-- Animated Typing Header -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=40&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&height=70&lines=BAD-ANTICS;Security+Research;Systems+Engineering" alt="Typing SVG" />
-<br>
+<img src="header.svg" alt="bad-antics — Security Research · Systems Engineering · Language Design" width="100%">
 
-[![A++ Rating](https://img.shields.io/badge/A++-Rating-3fb950?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
-[![Repos](https://img.shields.io/badge/732-Repos-58a6ff?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics?tab=repositories)
-[![Tools](https://img.shields.io/badge/140+-Tools-a371f7?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
-[![Reach](https://img.shields.io/badge/1M+-Reach-f85149?style=for-the-badge&labelColor=0d1117)](https://github.com/bad-antics)
+<br><br>
 
-<br>
-
-[![Portal](https://img.shields.io/badge/🌐_Portal-bad--antics.github.io-00ff00?style=flat-square&labelColor=0d1117)](https://bad-antics.github.io/)
-&nbsp;•&nbsp;
-[![Profile](https://img.shields.io/badge/👤_Profile-bad--antics-181717?style=flat-square&labelColor=0d1117)](https://github.com/bad-antics)
+[![Portal](https://img.shields.io/badge/🌐_Portal-bad--antics.github.io-7c5cfc?style=for-the-badge&labelColor=0a0a0f)](https://bad-antics.github.io/)
+[![Lateralus](https://img.shields.io/badge/|>_Lateralus-Try_Playground-22d3ee?style=for-the-badge&labelColor=0a0a0f)](https://bad-antics.github.io/lateralus/playground/)
+[![VS Code](https://img.shields.io/badge/VS_Code-Marketplace-34d399?style=for-the-badge&labelColor=0a0a0f)](https://marketplace.visualstudio.com/items?itemName=lateralus.lateralus-lang)
+[![PyPI](https://img.shields.io/badge/PyPI-lateralus--lang-fb923c?style=for-the-badge&labelColor=0a0a0f)](https://pypi.org/project/lateralus-lang/)
 
 </div>
 
----
+<img src="divider.svg" width="100%">
 
 <div align="center">
 
-**Security researcher** • **732 repos** • **140+ tools** • **1M+ reach**
+**Security researcher** · **language designer** · **732 repos** · **140+ tools** · **1M+ reach**
 
-*Contributor to h4cker ⭐25.6k • awesome-security • android-security-awesome ⭐9.3k*
+*Merged PRs in* **h4cker** ⭐25.6k · **Awesome-Hacking** ⭐108.8k · **android-security-awesome** ⭐9.3k · **awesome-flipperzero** ⭐23k
 
 </div>
 
----
+<img src="divider.svg" width="100%">
 
-Independent security researcher building **bad-antics ./Dev** — a comprehensive ecosystem of **140+ specialized security tools** and a complete Linux distribution. Focus areas include cloud security, AI/ML security, hardware hacking, automotive systems, mobile security, and advanced systems research.
+## |> Lateralus Programming Language
 
----
+<div align="center">
+
+<a href="https://bad-antics.github.io/lateralus/playground/">
+<img src="lateralus-banner.svg" alt="Lateralus — Pipeline-native programming language" width="100%">
+</a>
+
+</div>
+
+A compiled programming language where **data flows left-to-right** with the pipeline operator `|>`. Pattern matching, async/await, structs with impl blocks, `try/recover/ensure` error handling — and zero dependencies.
+
+```
+let report = transactions
+    |> filter(|t| t.amount > 20.0)
+    |> group_by(|t| t.category)
+    |> sort_by(|e| e.total, descending)
+```
+
+| | |
+|:---|:---|
+| 🌐 **Website** | [bad-antics.github.io/lateralus](https://bad-antics.github.io/lateralus/) |
+| ▶ **Playground** | [Try in browser — no install](https://bad-antics.github.io/lateralus/playground/) |
+| 📦 **Install** | `pip install lateralus-lang` |
+| 🧩 **VS Code** | [Marketplace](https://marketplace.visualstudio.com/items?itemName=lateralus.lateralus-lang) |
+| 📚 **Tutorials** | [25 step-by-step lessons](https://github.com/bad-antics/lateralus-tutorials) |
+| 🖥️ **LateralusOS** | [Full OS kernel written in .ltl](https://github.com/bad-antics/lateralus-os) |
+| 📊 **Ecosystem** | 22 repos · 2,400+ .ltl files · compiler, VM, web framework, ML tools |
+
+<img src="divider.svg" width="100%">
+
+## 🐧 NullSec Linux v5.0
+
+Security-focused Linux distribution with **140+ pre-installed tools**, AI-powered threat analysis, and 5 specialized editions spanning AMD64, ARM64, RISC-V, and Apple Silicon.
+
+<table>
+<tr>
+<td width="50%">
+
+**Editions:**
+- 🔒 **Professional** — Full pentest suite
+- 🏭 **Industrial** — ICS/SCADA security
+- 📱 **Mobile** — Android/iOS testing
+- ☁️ **Cloud** — AWS/GCP/Azure audit
+- 🤖 **AI** — ML security research
+
+</td>
+<td width="50%">
+
+**Highlights:**
+- 🪓 **LogReaper** ⭐72 — High-speed log forensics
+- 🔍 **RKHunt** v2.5 — 250+ rootkit signatures
+- ☁️ **CloudAudit** — 500+ compliance checks
+- 🤖 **LLMRed** — AI/ML red teaming
+- 🛡️ **RCE Shield** — PC gamer hardening
+
+</td>
+</tr>
+</table>
+
+[![NullSec Linux](https://img.shields.io/badge/Download-NullSec_Linux_v5.0-34d399?style=for-the-badge&logo=linux&logoColor=white&labelColor=0a0a0f)](https://github.com/bad-antics/nullsec-linux)
+
+<img src="divider.svg" width="100%">
 
 ## 💻 Tech Stack
 
@@ -39,18 +93,20 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 <tr>
 <td valign="top" width="33%">
 
-### ⚡ Systems & Low-Level
-![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
+**⚡ Systems & Low-Level**
+
+![Rust](https://img.shields.io/badge/Rust-000?style=flat-square&logo=rust&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 ![Zig](https://img.shields.io/badge/Zig-F7A41D?style=flat-square&logo=zig&logoColor=black)
-![Assembly](https://img.shields.io/badge/ASM-654FF0?style=flat-square&logo=assemblyscript&logoColor=white)
+![Lateralus](https://img.shields.io/badge/Lateralus-7c5cfc?style=flat-square)
 
 </td>
 <td valign="top" width="33%">
 
-### 🔬 Scientific & HPC
+**🔬 Scientific & HPC**
+
 ![Julia](https://img.shields.io/badge/Julia-9558B2?style=flat-square&logo=julia&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Haskell](https://img.shields.io/badge/Haskell-5D4F85?style=flat-square&logo=haskell&logoColor=white)
@@ -60,19 +116,8 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 </td>
 <td valign="top" width="33%">
 
-### 📜 Scripting & Automation
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
-![Lua](https://img.shields.io/badge/Lua-2C2D72?style=flat-square&logo=lua&logoColor=white)
-![Nim](https://img.shields.io/badge/Nim-FFE953?style=flat-square&logo=nim&logoColor=black)
-![Crystal](https://img.shields.io/badge/Crystal-000000?style=flat-square&logo=crystal&logoColor=white)
+**☁️ Cloud & DevOps**
 
-</td>
-</tr>
-<tr>
-<td valign="top" width="33%">
-
-### ☁️ Cloud & DevOps
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
 ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
@@ -81,23 +126,35 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
 
 </td>
+</tr>
+<tr>
 <td valign="top" width="33%">
 
-### 🐧 Linux & Embedded
+**📜 Scripting & Automation**
+
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
+![Lua](https://img.shields.io/badge/Lua-2C2D72?style=flat-square&logo=lua&logoColor=white)
+![Nim](https://img.shields.io/badge/Nim-FFE953?style=flat-square&logo=nim&logoColor=black)
+
+</td>
+<td valign="top" width="33%">
+
+**🐧 Linux & Embedded**
+
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Buildroot](https://img.shields.io/badge/Buildroot-000000?style=flat-square&logo=linux&logoColor=white)
-![Yocto](https://img.shields.io/badge/Yocto-0077B5?style=flat-square&logo=yoctoproject&logoColor=white)
+![Buildroot](https://img.shields.io/badge/Buildroot-000?style=flat-square&logo=linux&logoColor=white)
 ![RPi](https://img.shields.io/badge/RPi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
 
 </td>
 <td valign="top" width="33%">
 
-### 🔒 Security Tools
+**🔒 Security Tools**
+
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
 ![Burp](https://img.shields.io/badge/Burp-FF6633?style=flat-square&logo=burpsuite&logoColor=white)
-![Ghidra](https://img.shields.io/badge/Ghidra-FF0000?style=flat-square)
-![IDA](https://img.shields.io/badge/IDA-4B0082?style=flat-square)
+![Ghidra](https://img.shields.io/badge/Ghidra-F00?style=flat-square)
 ![Frida](https://img.shields.io/badge/Frida-DC5C23?style=flat-square&logo=frida&logoColor=white)
 ![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square)
 
@@ -105,25 +162,7 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 </tr>
 </table>
 
----
-
-## 🔮 Julia Security Suite
-
-<div align="center">
-
-*High-performance security research in Julia • 40,000+ lines*
-
-</div>
-
-| Tool | Description | Lines |
-|:-----|:------------|------:|
-| [**�� Spectra**](https://github.com/bad-antics/spectra) | Cryptography, network analysis, forensics toolkit | 8,000+ |
-| [**🔮 Oracle**](https://github.com/bad-antics/oracle) | AI vulnerability discovery — 87% prediction accuracy | 11,389 |
-| [**👻 Phantom**](https://github.com/bad-antics/phantom) | Zero-knowledge proofs for anonymous disclosure | 6,302 |
-| [**🌀 Vortex**](https://github.com/bad-antics/vortex) | Threat intelligence fusion — 50+ feeds, ML correlation | 8,406 |
-| [**🪞 Mirage**](https://github.com/bad-antics/mirage) | Adversarial ML — attacks, defenses, robustness | 7,000+ |
-
----
+<img src="divider.svg" width="100%">
 
 ## 🚀 Featured Projects
 
@@ -131,48 +170,18 @@ Independent security researcher building **bad-antics ./Dev** — a comprehensiv
 <tr>
 <td width="50%" valign="top">
 
-### 🐧 NullSec Linux v5.0
-Security-focused distribution with **140+ tools**
-- 5 specialized editions
-- AMD64, ARM64, RISC-V, Apple Silicon
-- AI-powered threat analysis
+### 🌐 Marshall Browser v3.0
+Privacy-focused security browser with **Dr. Marshall AI assistant** and built-in exploit tools.
 
-[![NullSec](https://img.shields.io/badge/Download-NullSec_Linux-3fb950?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/bad-antics/nullsec-linux)
+[![Marshall](https://img.shields.io/badge/View-Marshall_Browser-22d3ee?style=for-the-badge&labelColor=0a0a0f)](https://github.com/bad-antics/marshall)
 
 </td>
-<td width="50%" valign="top">
-
-### 🪓 LogReaper ⭐72
-High-speed log analysis & forensics
-- Blazing fast pattern matching
-- Forensic timeline reconstruction
-- Part of NullSec Toolkit
-
-[![LogReaper](https://img.shields.io/badge/View-LogReaper-f85149?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/bad-antics/nullsec-logreaper)
-
-</td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 📱 NullKia v3.0
-Mobile security framework — **18 manufacturers**
-- Baseband exploitation
-- 5G/LTE security testing
-- TEE/TrustZone research
+Mobile security framework — **18 manufacturers**, baseband exploitation, 5G/LTE testing, TEE/TrustZone research.
 
-[![NullKia](https://img.shields.io/badge/View-NullKia-a371f7?style=for-the-badge&logo=android&logoColor=white)](https://github.com/bad-antics/nullkia)
-
-</td>
-<td width="50%" valign="top">
-
-### 🔍 RKHunt v2.5
-Advanced rootkit detection
-- 250+ signatures, 15 modules
-- eBPF analysis, MITRE ATT&CK
-- Live forensics mode
-
-[![RKHunt](https://img.shields.io/badge/View-RKHunt-f85149?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/bad-antics/nullsec-rkhunt)
+[![NullKia](https://img.shields.io/badge/View-NullKia-a78bfa?style=for-the-badge&labelColor=0a0a0f)](https://github.com/bad-antics/nullkia)
 
 </td>
 </tr>
@@ -180,68 +189,50 @@ Advanced rootkit detection
 <td width="50%" valign="top">
 
 ### 🚗 BlackFlag
-Automotive & ECU security
-- CAN bus, OBD-II, UDS
-- Key fob analysis
-- ECU fuzzing & tuning
+Automotive & ECU security — CAN bus, OBD-II, UDS protocols, key fob analysis, ECU fuzzing.
 
-[![BlackFlag](https://img.shields.io/badge/View-BlackFlag-d29922?style=for-the-badge)](https://github.com/bad-antics/blackflag)
-
-</td>
-<td width="50%" valign="top">
-
-### ☁️ CloudAudit v2.0
-Multi-cloud security scanner
-- AWS, GCP, Azure support
-- 500+ compliance checks
-- Infrastructure as Code scanning
-
-[![CloudAudit](https://img.shields.io/badge/View-CloudAudit-58a6ff?style=for-the-badge&logo=amazonaws&logoColor=white)](https://github.com/bad-antics/nullsec-cloudaudit)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🤖 LLMRed v1.5
-AI/ML security testing framework
-- Prompt injection detection
-- Model extraction attacks
-- Adversarial robustness testing
-
-[![LLMRed](https://img.shields.io/badge/View-LLMRed-ff6b6b?style=for-the-badge&logo=openai&logoColor=white)](https://github.com/bad-antics/nullsec-llmred)
+[![BlackFlag](https://img.shields.io/badge/View-BlackFlag-fb923c?style=for-the-badge&labelColor=0a0a0f)](https://github.com/bad-antics/blackflag)
 
 </td>
 <td width="50%" valign="top">
 
 ### 🛡️ RCE Shield
-RCE hardening for PC gamers
-- Game launcher & anti-cheat scanning
-- Mod & overlay vulnerability checks
-- Network & peripheral security
+RCE hardening for PC gamers — game launcher scanning, anti-cheat auditing, mod & overlay vulnerability checks.
 
-[![RCE Shield](https://img.shields.io/badge/View-RCE_Shield-58a6ff?style=for-the-badge)](https://github.com/bad-antics/rce-shield)
+[![RCE Shield](https://img.shields.io/badge/View-RCE_Shield-22d3ee?style=for-the-badge&labelColor=0a0a0f)](https://github.com/bad-antics/rce-shield)
 
 </td>
 </tr>
 </table>
 
----
+<img src="divider.svg" width="100%">
 
-## 🔥 Unleash Hell Collection
+## 🔮 Julia Security Suite
 
-<div align="center">
+*High-performance security research in Julia · 40,000+ lines*
 
-*Hellfire-themed packs for Flipper Zero & WiFi Pineapple Pager*
+| Tool | Description | Lines |
+|:-----|:------------|------:|
+| [**🔬 Spectra**](https://github.com/bad-antics/spectra) | Cryptography, network analysis, forensics toolkit | 8,000+ |
+| [**🔮 Oracle**](https://github.com/bad-antics/oracle) | AI vulnerability discovery — 87% prediction accuracy | 11,389 |
+| [**👻 Phantom**](https://github.com/bad-antics/phantom) | Zero-knowledge proofs for anonymous disclosure | 6,302 |
+| [**🌀 Vortex**](https://github.com/bad-antics/vortex) | Threat intelligence fusion — 50+ feeds, ML correlation | 8,406 |
+| [**🪞 Mirage**](https://github.com/bad-antics/mirage) | Adversarial ML — attacks, defenses, robustness | 7,000+ |
 
-</div>
+<img src="divider.svg" width="100%">
 
-| Device | Theme | Components | Repo |
-|:-------|:------|:-----------|:-----|
-| 🐬 Flipper Zero | 10 hellfire animations, 88 frames | Demon skulls, pentagrams, fire, chains, lightning | [![Repo](https://img.shields.io/badge/-Flipper-ff5500?style=flat-square)](https://github.com/bad-antics/nullsec-unleash-hell) |
-| 🍍 Pineapple Pager | 113 themed UI components | Boot animation, dashboards, dialogs, alerts, keyboards | [![Repo](https://img.shields.io/badge/-Pager-ff5500?style=flat-square)](https://github.com/bad-antics/nullsec-unleash-hell-pager) |
+## 🖥️ N01D Desktop Suite
 
----
+| App | Description |
+|:----|:------------|
+| [**n01d-forge**](https://github.com/bad-antics/n01d-forge) ⭐9 | Secure image burner — LUKS, VeraCrypt, secure erase |
+| [**n01d-machine**](https://github.com/bad-antics/n01d-machine) ⭐8 | VM manager — sandboxing, Tor, VPN isolation |
+| [**n01d-media**](https://github.com/bad-antics/n01d-media) | Unified media player, editor & encoder |
+| [**n01d-overwatch**](https://github.com/bad-antics/n01d-overwatch) | Real-time global conflict OSINT dashboard |
+| [**n01d-docker**](https://github.com/bad-antics/n01d-docker) | Custom security & dev containers |
+| [**n01d-timemachine**](https://github.com/bad-antics/n01d-timemachine) | Classic computing emulator — C64, Amiga, ZX, DOS |
+
+<img src="divider.svg" width="100%">
 
 ## 🍍🐬 Device Suites
 
@@ -250,103 +241,40 @@ RCE hardening for PC gamers
 <td width="50%" valign="top">
 
 ### 🍍 Pineapple Suite ⭐31
-**96+ WiFi Pineapple Pager payloads** across 13 categories
-- Attack, Recon, Capture, Stealth
-- Interception, Exfiltration & more
+**96+ WiFi Pineapple Pager payloads** across 13 categories.
 
-[![Pineapple Suite](https://img.shields.io/badge/View-Pineapple_Suite-3fb950?style=for-the-badge)](https://github.com/bad-antics/nullsec-pineapple-suite)
+[![Pineapple](https://img.shields.io/badge/View-Pineapple_Suite-34d399?style=for-the-badge&labelColor=0a0a0f)](https://github.com/bad-antics/nullsec-pineapple-suite)
 
 </td>
 <td width="50%" valign="top">
 
 ### 🐬 Flipper Suite ⭐24
-**430+ Flipper Zero files**
-- 80 BadUSB payloads, 40 SubGHz signals
-- 16 IR remotes, NFC, RFID, animations
+**430+ Flipper Zero files** — BadUSB, SubGHz, NFC, RFID, IR, animations.
 
-[![Flipper Suite](https://img.shields.io/badge/View-Flipper_Suite-3fb950?style=for-the-badge)](https://github.com/bad-antics/nullsec-flipper-suite)
+[![Flipper](https://img.shields.io/badge/View-Flipper_Suite-34d399?style=for-the-badge&labelColor=0a0a0f)](https://github.com/bad-antics/nullsec-flipper-suite)
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+### 🔥 Unleash Hell Collection
+Hellfire-themed packs — 10 animations (88 frames) for Flipper Zero, 113 themed UI components for WiFi Pineapple Pager.
+
+[![Flipper](https://img.shields.io/badge/Flipper-Unleash_Hell-f87171?style=flat-square&labelColor=0a0a0f)](https://github.com/bad-antics/nullsec-unleash-hell)
+[![Pager](https://img.shields.io/badge/Pager-Unleash_Hell-f87171?style=flat-square&labelColor=0a0a0f)](https://github.com/bad-antics/nullsec-unleash-hell-pager)
 
 </td>
 </tr>
 </table>
 
----
+<img src="divider.svg" width="100%">
 
-## 🐬 PineFlip Ecosystem
-
-<div align="center">
-
-*Unified management tools for Flipper Zero & WiFi Pineapple*
-
-</div>
-
-| Tool | Description |
-|:-----|:------------|
-| [**PineFlip**](https://github.com/bad-antics/pineflip) ⭐4 | GTK4/libadwaita companion app — screen mirroring, file manager, firmware |
-| [**PineFlip Desktop**](https://github.com/bad-antics/pineflip-desktop-app) | Python desktop device manager |
-| [**PineFlip Manager**](https://github.com/bad-antics/pineflip-manager) | Web-based management dashboard |
-| [**PineFlip Native**](https://github.com/bad-antics/pineflip-manager-native) | Native Flipper + Pineapple management tool |
-| [**PineFlip Web**](https://github.com/bad-antics/pineflip-web-app) | Flask remote device management |
-
----
-
-## 🖥️ N01D Suite
+## ✅ Community Contributions
 
 <div align="center">
 
-*Security-focused desktop applications*
-
-</div>
-
-| App | Description |
-|:----|:------------|
-| [**n01d-forge**](https://github.com/bad-antics/n01d-forge) ⭐9 | Secure image burner — LUKS, VeraCrypt, secure erase, hash verification |
-| [**n01d-machine**](https://github.com/bad-antics/n01d-machine) ⭐8 | VM manager — sandboxing, Tor, VPN & network isolation |
-| [**n01d-media**](https://github.com/bad-antics/n01d-media) | Unified media player, editor & encoder — FFmpeg powered |
-| [**n01d-docker**](https://github.com/bad-antics/n01d-docker) | Custom security & dev containers — pentest, Julia, CTF, VPN |
-| [**n01d-overwatch**](https://github.com/bad-antics/n01d-overwatch) | Real-time global conflict OSINT dashboard |
-| [**n01d-term**](https://github.com/bad-antics/n01d-term) | Modern terminal emulator with tabs |
-| [**n01d-sysmon**](https://github.com/bad-antics/n01d-sysmon) | Real-time system monitor |
-| [**n01d-notes**](https://github.com/bad-antics/n01d-notes) | Markdown notes with live preview |
-| [**n01d-book-reader**](https://github.com/bad-antics/n01d-book-reader) | Self-hosted eBook library & OPDS server |
-| [**n01d-timemachine**](https://github.com/bad-antics/n01d-timemachine) | Classic computing emulator — C64, Amiga, ZX Spectrum, DOS |
-
----
-
-## 🛠️ Security Tool Suites
-
-| ☁️ Cloud | 🤖 AI/ML | 🔌 Hardware | 🚗 Automotive | ⚙️ Core | 📱 Mobile |
-|:--------:|:--------:|:-----------:|:-------------:|:-------:|:---------:|
-| [cloudaudit](https://github.com/bad-antics/nullsec-cloudaudit) | [llmred](https://github.com/bad-antics/nullsec-llmred) | [sdr](https://github.com/bad-antics/nullsec-sdr) | [carfuzz](https://github.com/bad-antics/nullsec-carfuzz) | [rkhunt](https://github.com/bad-antics/nullsec-rkhunt) | [nullkia](https://github.com/bad-antics/nullkia) |
-| [k8sscan](https://github.com/bad-antics/nullsec-k8sscan) | [promptinject](https://github.com/bad-antics/nullsec-promptinject) | [rfid](https://github.com/bad-antics/nullsec-rfid) | [obdii](https://github.com/bad-antics/nullsec-obdii) | [kernspy](https://github.com/bad-antics/nullsec-kernspy) | Baseband |
-| [awsrecon](https://github.com/bad-antics/nullsec-awsrecon) | [modelaudit](https://github.com/bad-antics/nullsec-modelaudit) | [canbus](https://github.com/bad-antics/nullsec-canbus) | [uds](https://github.com/bad-antics/nullsec-uds) | [memguard](https://github.com/bad-antics/nullsec-memguard) | 5G/LTE |
-| [terraform-scan](https://github.com/bad-antics/nullsec-terraform-scan) | [adversarial](https://github.com/bad-antics/nullsec-adversarial) | [glitch](https://github.com/bad-antics/nullsec-glitch) | [keyfob](https://github.com/bad-antics/nullsec-keyfob) | [injector](https://github.com/bad-antics/nullsec-injector) | TrustZone |
-| | [prompt-armor](https://github.com/bad-antics/nullsec-prompt-armor) | | [blackflag-ecu](https://github.com/bad-antics/blackflag-ecu) | [logreaper](https://github.com/bad-antics/nullsec-logreaper) | |
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-<a href="https://github.com/bad-antics">
-<img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=bad-antics&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" />
-</a>
-<a href="https://github.com/bad-antics">
-<img height="165" src="https://github-readme-streak-stats-eight.vercel.app/?user=bad-antics&theme=github-dark-blue&hide_border=true" />
-</a>
-
-</div>
-
----
-
-## �� Community Contributions
-
-<div align="center">
-
-| ✅ Merged PRs | 📊 Total Submitted | 🌐 Combined Reach |
-|:-------------:|:------------------:|:-----------------:|
-| **60** | **195** | **1M+ ⭐** |
+**60 merged PRs** · **195 total submitted** · **1M+ combined stars**
 
 *Accepted contributions across 17 major open-source security projects*
 
@@ -354,69 +282,58 @@ RCE hardening for PC gamers
 
 <table>
 <tr>
-<td valign="top">
+<td valign="top" width="50%">
 
-### 🏆 Flagship Contributions
-
-| Repository | ⭐ Stars | Contribution | Status |
-|:-----------|--------:|:-------------|:------:|
-| [**h4cker**](https://github.com/The-Art-of-Hacking/h4cker) | 25.6k | Car-hacking tools & resources | ×5 PRs ✅ |
-| [**Awesome-Hacking**](https://github.com/Hack-with-Github/Awesome-Hacking) | 108.8k | NullSec tools listing | ✅ |
-| [**awesome-flipperzero**](https://github.com/djsime1/awesome-flipperzero) | 23k | Flipper Zero payloads & tools | ✅ |
-| [**awesome-pentest**](https://github.com/enaqx/awesome-pentest) | 25.6k | Penetration testing tools | ✅ |
-| [**awesome-osint**](https://github.com/jivoi/awesome-osint) | 25.4k | OSINT resources | ✅ |
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-### 🔧 Security & Research
-
-| Repository | ⭐ Stars | Contribution | Status |
-|:-----------|--------:|:-------------|:------:|
-| [**android-security-awesome**](https://github.com/ashishb/android-security-awesome) | 9.3k | NullKia mobile tools — PR #257 | ✅ |
-| [**awesome-web-hacking**](https://github.com/infoslack/awesome-web-hacking) | 6.8k | NullSec web security tools | ✅ |
-| [**awesome-iot**](https://github.com/HQarroum/awesome-iot) | 3.9k | IoT security resources — PR #131 | ✅ |
-| [**Checklists**](https://github.com/netbiosX/Checklists) | 2.6k | Pentesting methodology checklists | ✅ |
-| [**bashbunny-payloads**](https://github.com/hak5/bashbunny-payloads) | 2.9k | Hak5 Bash Bunny payloads | ✅ |
+| Repository | ⭐ | Status |
+|:-----------|---:|:------:|
+| [**Awesome-Hacking**](https://github.com/Hack-with-Github/Awesome-Hacking) | 108.8k | ✅ |
+| [**h4cker**](https://github.com/The-Art-of-Hacking/h4cker) | 25.6k | ×5 ✅ |
+| [**awesome-pentest**](https://github.com/enaqx/awesome-pentest) | 25.6k | ✅ |
+| [**awesome-osint**](https://github.com/jivoi/awesome-osint) | 25.4k | ✅ |
+| [**awesome-flipperzero**](https://github.com/djsime1/awesome-flipperzero) | 23k | ✅ |
+| [**awesome-privacy**](https://github.com/pluja/awesome-privacy) | 18.3k | ✅ |
 
 </td>
-</tr>
-<tr>
-<td valign="top">
+<td valign="top" width="50%">
 
-### 🐧 Linux & OSINT
-
-| Repository | ⭐ Stars | Contribution | Status |
-|:-----------|--------:|:-------------|:------:|
-| [**awesome-linux-rootkits**](https://github.com/milabs/awesome-linux-rootkits) | 2k | RKHunt detection tools | ✅ |
-| [**Awesome-OSINT-For-Everything**](https://github.com/Astrosp/Awesome-OSINT-For-Everything) | 2.2k | OSINT collection tools — PR #52 | ✅ |
-| [**awesome-embedded-linux**](https://github.com/fkromer/awesome-embedded-linux) | 397 | GlowBarn embedded project | ✅ |
-| [**awesome-security**](https://github.com/sbilly/awesome-security) | 14.1k | Security resources & tools | ✅ |
-| [**awesome-privacy**](https://github.com/pluja/awesome-privacy) | 18.3k | Privacy-focused tools | ✅ |
+| Repository | ⭐ | Status |
+|:-----------|---:|:------:|
+| [**awesome-security**](https://github.com/sbilly/awesome-security) | 14.1k | ✅ |
+| [**android-security-awesome**](https://github.com/ashishb/android-security-awesome) | 9.3k | ✅ |
+| [**awesome-web-hacking**](https://github.com/infoslack/awesome-web-hacking) | 6.8k | ✅ |
+| [**awesome-iot**](https://github.com/HQarroum/awesome-iot) | 3.9k | ✅ |
+| [**bashbunny-payloads**](https://github.com/hak5/bashbunny-payloads) | 2.9k | ✅ |
+| [**awesome-linux-rootkits**](https://github.com/milabs/awesome-linux-rootkits) | 2k | ✅ |
 
 </td>
 </tr>
 </table>
 
+<img src="divider.svg" width="100%">
+
+## 📊 GitHub Stats
+
 <div align="center">
 
-[![h4cker](https://img.shields.io/badge/h4cker-×5_PRs-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/The-Art-of-Hacking/h4cker)
-[![Awesome-Hacking](https://img.shields.io/badge/Awesome--Hacking-⭐_108.8k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hack-with-Github/Awesome-Hacking)
-[![awesome-flipperzero](https://img.shields.io/badge/awesome--flipperzero-⭐_23k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/djsime1/awesome-flipperzero)
-[![android-security](https://img.shields.io/badge/android--security-⭐_9.3k-3fb950?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ashishb/android-security-awesome)
+<a href="https://github.com/bad-antics">
+<img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=bad-antics&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&bg_color=0a0a0f&title_color=7c5cfc&icon_color=22d3ee&text_color=e8e8f0&ring_color=7c5cfc" />
+</a>
+<a href="https://github.com/bad-antics">
+<img height="165" src="https://github-readme-streak-stats-eight.vercel.app/?user=bad-antics&theme=github-dark-blue&hide_border=true&background=0a0a0f&ring=7c5cfc&fire=22d3ee&currStreakLabel=22d3ee" />
+</a>
 
 </div>
 
----
+<img src="divider.svg" width="100%">
 
 <div align="center">
 
-[![Portal](https://img.shields.io/badge/🌐_bad--antics.github.io-Visit_Portal-58a6ff?style=for-the-badge&labelColor=0d1117)](https://bad-antics.github.io/)
+[![Portal](https://img.shields.io/badge/🌐_Portal-bad--antics.github.io-7c5cfc?style=for-the-badge&labelColor=0a0a0f)](https://bad-antics.github.io/)
+&nbsp;
+[![Lateralus](https://img.shields.io/badge/|>_Lateralus-Playground-22d3ee?style=for-the-badge&labelColor=0a0a0f)](https://bad-antics.github.io/lateralus/playground/)
 
 *For authorized security testing and educational purposes only.*
 
-**© 2024-2026 bad-antics • Security Engineering & Systems Research**
+**© 2024-2026 bad-antics · Security Engineering · Systems Research · Language Design**
 
 </div>

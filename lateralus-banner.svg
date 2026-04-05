@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 120">
+  <defs>
+    <linearGradient id="lbg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="100%" style="stop-color:#12121a"/>
+    </linearGradient>
+    <linearGradient id="pipeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c5cfc"/>
+      <stop offset="50%" style="stop-color:#22d3ee"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+  </defs>
+  <rect width="840" height="120" fill="url(#lbg)" rx="10"/>
+  <rect x="1" y="1" width="838" height="118" fill="none" stroke="rgba(124,92,252,0.25)" stroke-width="1" rx="10"/>
+  <!-- Pipeline flow animation -->
+  <g transform="translate(40, 35)">
+    <text font-family="'JetBrains Mono', monospace" font-size="14" fill="#8888a8">data</text>
+    <text x="50" font-family="'JetBrains Mono', monospace" font-size="14" fill="#7c5cfc" font-weight="700">|&gt;</text>
+    <text x="75" font-family="'JetBrains Mono', monospace" font-size="14" fill="#22d3ee">transform</text>
+    <text x="175" font-family="'JetBrains Mono', monospace" font-size="14" fill="#7c5cfc" font-weight="700">|&gt;</text>
+    <text x="200" font-family="'JetBrains Mono', monospace" font-size="14" fill="#22d3ee">filter</text>
+    <text x="260" font-family="'JetBrains Mono', monospace" font-size="14" fill="#7c5cfc" font-weight="700">|&gt;</text>
+    <text x="285" font-family="'JetBrains Mono', monospace" font-size="14" fill="#34d399">result</text>
+    <!-- Animated dot flowing through pipeline -->
+    <circle cy="5" r="4" fill="#7c5cfc" opacity="0.8">
+      <animate attributeName="cx" values="0;50;75;175;200;260;285;340" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="fill" values="#8888a8;#7c5cfc;#22d3ee;#7c5cfc;#22d3ee;#7c5cfc;#34d399;#34d399" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <!-- Lateralus branding -->
+  <text x="40" y="80" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="800" fill="url(#pipeGrad)">LATERALUS</text>
+  <text x="40" y="100" font-family="'Inter', sans-serif" font-size="12" fill="#8888a8">Pipeline-native programming · Pattern matching · Async/await · Zero dependencies</text>
+  <!-- Try button -->
+  <rect x="620" y="60" width="180" height="36" rx="8" fill="rgba(124,92,252,0.15)" stroke="#7c5cfc" stroke-width="1"/>
+  <text x="710" y="83" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#a78bfa">▶ Try in Browser</text>
+</svg>

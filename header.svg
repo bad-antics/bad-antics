@@ -1,58 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 220">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d1117"/>
-      <stop offset="100%" style="stop-color:#161b22"/>
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="100%" style="stop-color:#12121a"/>
     </linearGradient>
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#58a6ff">
-        <animate attributeName="stop-color" values="#58a6ff;#a371f7;#3fb950;#58a6ff" dur="4s" repeatCount="indefinite"/>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c5cfc">
+        <animate attributeName="stop-color" values="#7c5cfc;#22d3ee;#34d399;#7c5cfc" dur="6s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="50%" style="stop-color:#a371f7">
-        <animate attributeName="stop-color" values="#a371f7;#3fb950;#58a6ff;#a371f7" dur="4s" repeatCount="indefinite"/>
+      <stop offset="50%" style="stop-color:#22d3ee">
+        <animate attributeName="stop-color" values="#22d3ee;#34d399;#7c5cfc;#22d3ee" dur="6s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" style="stop-color:#3fb950">
-        <animate attributeName="stop-color" values="#3fb950;#58a6ff;#a371f7;#3fb950" dur="4s" repeatCount="indefinite"/>
+      <stop offset="100%" style="stop-color:#34d399">
+        <animate attributeName="stop-color" values="#34d399;#7c5cfc;#22d3ee;#34d399" dur="6s" repeatCount="indefinite"/>
       </stop>
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c5cfc"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
     </linearGradient>
     <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <clipPath id="bannerClip"><rect width="840" height="220" rx="12"/></clipPath>
   </defs>
-  
-  <!-- Background -->
-  <rect width="800" height="200" fill="url(#bg)" rx="10"/>
-  
-  <!-- Animated border -->
-  <rect x="2" y="2" width="796" height="196" fill="none" stroke="url(#textGrad)" stroke-width="2" rx="8" opacity="0.5"/>
-  
-  <!-- Main text -->
-  <text x="400" y="95" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="64" font-weight="bold" fill="url(#textGrad)" filter="url(#glow)">
-    BAD<tspan fill="#3fb950">-</tspan>ANTICS
-    <animate attributeName="opacity" values="1;0.8;1" dur="2s" repeatCount="indefinite"/>
-  </text>
-  
-  <!-- Underscore blink -->
-  <text x="400" y="95" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="64" font-weight="bold">
-    <tspan fill="transparent">BAD</tspan><tspan fill="#3fb950">-</tspan>
-    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-  </text>
-  
-  <!-- Subtitle -->
-  <text x="400" y="140" text-anchor="middle" font-family="'Inter', sans-serif" font-size="18" fill="#8b949e">
-    Security Engineering & Systems Research
-  </text>
-  
-  <!-- Stats bar -->
-  <g transform="translate(400, 170)" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12">
-    <text x="-200" fill="#3fb950">706 repos</text>
-    <text x="-80" fill="#8b949e">•</text>
-    <text x="0" fill="#a371f7">140+ tools</text>
-    <text x="80" fill="#8b949e">•</text>
-    <text x="200" fill="#58a6ff">1M+ reach</text>
+  <g clip-path="url(#bannerClip)">
+    <rect width="840" height="220" fill="url(#bg)"/>
+    <circle cx="720" cy="110" r="120" fill="none" stroke="#7c5cfc" stroke-width="0.5" opacity="0.15">
+      <animate attributeName="r" values="80;140;80" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.05;0.15" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="720" cy="110" r="80" fill="none" stroke="#22d3ee" stroke-width="0.5" opacity="0.1">
+      <animate attributeName="r" values="60;100;60" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="720" cy="110" r="50" fill="none" stroke="#34d399" stroke-width="0.5" opacity="0.08">
+      <animate attributeName="r" values="40;70;40" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <rect x="40" y="38" width="3" height="50" rx="1.5" fill="url(#purpleGlow)" opacity="0.6">
+      <animate attributeName="height" values="50;60;50" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="60" y="70" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="22" font-weight="700" fill="url(#accentGrad)" filter="url(#glow)">|&gt;</text>
+    <text x="60" y="105" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="52" font-weight="800" fill="url(#accentGrad)" filter="url(#glow)">
+      BAD-ANTICS
+      <animate attributeName="opacity" values="1;0.85;1" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <text x="63" y="135" font-family="'Inter', 'Segoe UI', sans-serif" font-size="15" fill="#8888a8" letter-spacing="0.5">Security Research · Systems Engineering · Language Design</text>
+    <g transform="translate(63, 170)" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12">
+      <rect x="-4" y="-12" width="74" height="22" rx="4" fill="rgba(124,92,252,0.12)" stroke="rgba(124,92,252,0.3)" stroke-width="0.5"/>
+      <text x="0" fill="#a78bfa" font-weight="600">732 repos</text>
+      <rect x="86" y="-12" width="80" height="22" rx="4" fill="rgba(34,211,238,0.08)" stroke="rgba(34,211,238,0.2)" stroke-width="0.5"/>
+      <text x="90" fill="#22d3ee" font-weight="600">140+ tools</text>
+      <rect x="182" y="-12" width="76" height="22" rx="4" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.2)" stroke-width="0.5"/>
+      <text x="186" fill="#34d399" font-weight="600">1M+ reach</text>
+      <rect x="274" y="-12" width="112" height="22" rx="4" fill="rgba(167,139,250,0.08)" stroke="rgba(167,139,250,0.2)" stroke-width="0.5"/>
+      <text x="278" fill="#a78bfa" font-weight="600">|&gt; lateralus</text>
+    </g>
+    <rect x="1" y="1" width="838" height="218" fill="none" stroke="url(#accentGrad)" stroke-width="1.5" rx="12" opacity="0.4"/>
+    <path d="M12 1 L1 1 L1 12" fill="none" stroke="#7c5cfc" stroke-width="2" opacity="0.6"/>
+    <path d="M828 1 L839 1 L839 12" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.6"/>
+    <path d="M12 219 L1 219 L1 208" fill="none" stroke="#34d399" stroke-width="2" opacity="0.6"/>
+    <path d="M828 219 L839 219 L839 208" fill="none" stroke="#7c5cfc" stroke-width="2" opacity="0.6"/>
   </g>
 </svg>
