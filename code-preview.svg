@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 280">
+  <defs>
+    <linearGradient id="cpLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c5cfc" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#7c5cfc" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#34d399" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="cpGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <clipPath id="windowClip">
+      <rect width="840" height="280" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#windowClip)">
+    <!-- Window background -->
+    <rect width="840" height="280" rx="10" fill="#0d1117" stroke="#2a2a3e" stroke-width="1"/>
+
+    <!-- Title bar -->
+    <rect width="840" height="38" fill="#161b22"/>
+    <line x1="0" y1="38" x2="840" y2="38" stroke="#2a2a3e" stroke-width="1"/>
+
+    <!-- Window buttons -->
+    <circle cx="20" cy="19" r="5.5" fill="#ff5f56" opacity="0.85"/>
+    <circle cx="40" cy="19" r="5.5" fill="#ffbd2e" opacity="0.85"/>
+    <circle cx="60" cy="19" r="5.5" fill="#27c93f" opacity="0.85"/>
+
+    <!-- File tab -->
+    <rect x="85" y="8" width="140" height="23" rx="5" fill="#0d1117"/>
+    <text x="105" y="24" font-family="'Courier New', Consolas, monospace" font-size="12" fill="#e8e8f0" opacity="0.8">pipeline.ltl</text>
+    <text x="92" y="24" font-family="'Courier New', monospace" font-size="11" fill="#7c5cfc">|&gt;</text>
+
+    <!-- Line number gutter background -->
+    <rect x="0" y="38" width="48" height="242" fill="#0a0e14"/>
+
+    <!-- Pipeline operator glow highlights -->
+    <rect x="90" y="103" width="22" height="18" rx="3" fill="#22d3ee" opacity="0.06"/>
+    <rect x="90" y="127" width="22" height="18" rx="3" fill="#22d3ee" opacity="0.06"/>
+    <rect x="90" y="151" width="22" height="18" rx="3" fill="#22d3ee" opacity="0.06"/>
+    <rect x="90" y="175" width="22" height="18" rx="3" fill="#22d3ee" opacity="0.06"/>
+    <rect x="135" y="223" width="22" height="18" rx="3" fill="#22d3ee" opacity="0.06"/>
+
+    <!-- Line numbers -->
+    <text font-family="'Courier New', Consolas, monospace" font-size="13" fill="#3d4450" text-anchor="end">
+      <tspan x="40" y="76">1</tspan>
+      <tspan x="40" y="100">2</tspan>
+      <tspan x="40" y="124">3</tspan>
+      <tspan x="40" y="148">4</tspan>
+      <tspan x="40" y="172">5</tspan>
+      <tspan x="40" y="196">6</tspan>
+      <tspan x="40" y="220">7</tspan>
+      <tspan x="40" y="244">8</tspan>
+    </text>
+
+    <!-- Gutter line -->
+    <line x1="48" y1="38" x2="48" y2="280" stroke="#1e2430" stroke-width="1"/>
+
+    <!-- Line 1: comment -->
+    <text x="60" y="76" font-family="'Courier New', Consolas, monospace" font-size="14" fill="#555d6b" font-style="italic">// Pipeline-native data processing</text>
+
+    <!-- Line 2: empty -->
+
+    <!-- Line 3: let report = transactions -->
+    <text y="124" font-family="'Courier New', Consolas, monospace" font-size="14">
+      <tspan x="60" fill="#c678dd" font-weight="bold">let</tspan>
+      <tspan fill="#e8e8f0"> report </tspan>
+      <tspan fill="#56b6c2">=</tspan>
+      <tspan fill="#e8e8f0"> transactions</tspan>
+    </text>
+
+    <!-- Line 4: |> filter(|t| t.amount > 100.0) -->
+    <text y="148" font-family="'Courier New', Consolas, monospace" font-size="14">
+      <tspan x="60" fill="#e8e8f0">    </tspan>
+      <tspan fill="#22d3ee" filter="url(#cpGlow)">|&gt;</tspan>
+      <tspan fill="#e8e8f0"> </tspan>
+      <tspan fill="#fbbf24">filter</tspan>
+      <tspan fill="#abb2bf">(</tspan>
+      <tspan fill="#f472b6">|t|</tspan>
+      <tspan fill="#e8e8f0"> t.amount </tspan>
+      <tspan fill="#56b6c2">&gt;</tspan>
+      <tspan fill="#34d399"> 100.0</tspan>
+      <tspan fill="#abb2bf">)</tspan>
+    </text>
+
+    <!-- Line 5: |> group_by(|t| t.category) -->
+    <text y="172" font-family="'Courier New', Consolas, monospace" font-size="14">
+      <tspan x="60" fill="#e8e8f0">    </tspan>
+      <tspan fill="#22d3ee" filter="url(#cpGlow)">|&gt;</tspan>
+      <tspan fill="#e8e8f0"> </tspan>
+      <tspan fill="#fbbf24">group_by</tspan>
+      <tspan fill="#abb2bf">(</tspan>
+      <tspan fill="#f472b6">|t|</tspan>
+      <tspan fill="#e8e8f0"> t.category</tspan>
+      <tspan fill="#abb2bf">)</tspan>
+    </text>
+
+    <!-- Line 6: |> sort_by(|g| g.total, descending) -->
+    <text y="196" font-family="'Courier New', Consolas, monospace" font-size="14">
+      <tspan x="60" fill="#e8e8f0">    </tspan>
+      <tspan fill="#22d3ee" filter="url(#cpGlow)">|&gt;</tspan>
+      <tspan fill="#e8e8f0"> </tspan>
+      <tspan fill="#fbbf24">sort_by</tspan>
+      <tspan fill="#abb2bf">(</tspan>
+      <tspan fill="#f472b6">|g|</tspan>
+      <tspan fill="#e8e8f0"> g.total, </tspan>
+      <tspan fill="#fb923c">descending</tspan>
+      <tspan fill="#abb2bf">)</tspan>
+    </text>
+
+    <!-- Line 7: |> take(5) -->
+    <text y="220" font-family="'Courier New', Consolas, monospace" font-size="14">
+      <tspan x="60" fill="#e8e8f0">    </tspan>
+      <tspan fill="#22d3ee" filter="url(#cpGlow)">|&gt;</tspan>
+      <tspan fill="#e8e8f0"> </tspan>
+      <tspan fill="#fbbf24">take</tspan>
+      <tspan fill="#abb2bf">(</tspan>
+      <tspan fill="#34d399">5</tspan>
+      <tspan fill="#abb2bf">)</tspan>
+    </text>
+
+    <!-- Line 8: report |> each(|r| println(r)) -->
+    <text y="244" font-family="'Courier New', Consolas, monospace" font-size="14">
+      <tspan x="60" fill="#e8e8f0">report </tspan>
+      <tspan fill="#22d3ee" filter="url(#cpGlow)">|&gt;</tspan>
+      <tspan fill="#e8e8f0"> </tspan>
+      <tspan fill="#fbbf24">each</tspan>
+      <tspan fill="#abb2bf">(</tspan>
+      <tspan fill="#f472b6">|r|</tspan>
+      <tspan fill="#e8e8f0"> </tspan>
+      <tspan fill="#fbbf24">println</tspan>
+      <tspan fill="#abb2bf">(</tspan>
+      <tspan fill="#e8e8f0">r</tspan>
+      <tspan fill="#abb2bf">))</tspan>
+    </text>
+
+    <!-- Blinking cursor -->
+    <rect x="345" y="232" width="2" height="16" fill="#e8e8f0">
+      <animate attributeName="opacity" values="1;1;0;0" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Active line highlight -->
+    <rect x="48" y="230" width="792" height="22" fill="#e8e8f0" opacity="0.02"/>
+
+    <!-- Bottom gradient fade -->
+    <rect x="0" y="264" width="840" height="16" fill="url(#cpBottomFade)" opacity="0.5"/>
+
+    <!-- Minimap hint (right side) -->
+    <rect x="808" y="38" width="32" height="242" fill="#0a0e14" opacity="0.5"/>
+    <rect x="814" y="60" width="6" height="3" rx="1" fill="#555d6b" opacity="0.2"/>
+    <rect x="814" y="66" width="10" height="3" rx="1" fill="#c678dd" opacity="0.15"/>
+    <rect x="814" y="72" width="14" height="3" rx="1" fill="#22d3ee" opacity="0.15"/>
+    <rect x="814" y="78" width="12" height="3" rx="1" fill="#22d3ee" opacity="0.15"/>
+    <rect x="814" y="84" width="16" height="3" rx="1" fill="#22d3ee" opacity="0.15"/>
+    <rect x="814" y="90" width="8" height="3" rx="1" fill="#22d3ee" opacity="0.15"/>
+    <rect x="814" y="98" width="12" height="3" rx="1" fill="#fbbf24" opacity="0.15"/>
+  </g>
+</svg>
