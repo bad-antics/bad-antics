@@ -138,7 +138,7 @@ Automotive security · CAN bus · OBD-II · ECU fuzzing
 
 <div align="center">
 
-**60 merged PRs** across **17 major projects** · combined **1M+ ⭐**
+**80 merged PRs** across **49 repos** · combined **1M+ ⭐**
 
 </div>
 
