@@ -4,8 +4,8 @@
 
 <br><br>
 
-[![Portal](https://img.shields.io/badge/🌐_Portal-bad--antics.github.io-7c5cfc?style=for-the-badge&labelColor=0a0a0f)](https://bad-antics.github.io/)
-[![Lateralus](https://img.shields.io/badge/|>_Lateralus-Playground-22d3ee?style=for-the-badge&labelColor=0a0a0f)](https://bad-antics.github.io/lateralus/playground/)
+[![Portal](https://img.shields.io/badge/🌐_Portal-lateralus.dev-7c5cfc?style=for-the-badge&labelColor=0a0a0f)](https://lateralus.dev/)
+[![Lateralus](https://img.shields.io/badge/|>_Lateralus-Playground-22d3ee?style=for-the-badge&labelColor=0a0a0f)](https://lateralus.dev/playground/)
 [![VS Code](https://img.shields.io/badge/VS_Code-Extension-34d399?style=for-the-badge&labelColor=0a0a0f)](https://marketplace.visualstudio.com/items?itemName=lateralus.lateralus-lang)
 [![PyPI](https://img.shields.io/badge/PyPI-lateralus--lang-fb923c?style=for-the-badge&labelColor=0a0a0f)](https://pypi.org/project/lateralus-lang/)
 
@@ -17,7 +17,7 @@
 
 <h2>|> Lateralus Programming Language</h2>
 
-<a href="https://bad-antics.github.io/lateralus/playground/">
+<a href="https://lateralus.dev/playground/">
 <img src="code-preview.svg" alt="Lateralus code — pipeline-native programming" width="92%">
 </a>
 
@@ -29,8 +29,16 @@ Pattern matching · async/await · structs with impl blocks · zero dependencies
 
 <br><br>
 
-[![Website](https://img.shields.io/badge/Website-bad--antics.github.io/lateralus-7c5cfc?style=flat-square&labelColor=0a0a0f)](https://bad-antics.github.io/lateralus/)
-[![Try It](https://img.shields.io/badge/Playground-Try_in_Browser-22d3ee?style=flat-square&labelColor=0a0a0f)](https://bad-antics.github.io/lateralus/playground/)
+**What's new in v3.2 (Apr 2026):** a 10-pillar `@law` verification pipeline —
+the compiler discovers, verifies, and proves algebraic laws about your code
+(distributivity, homomorphisms, inverses, involutions) directly from source.
+**2055 tests green · 0 regressions** · [read the CHANGELOG →](https://github.com/bad-antics/lateralus-lang/blob/main/CHANGELOG.md)
+
+
+<br><br>
+
+[![Website](https://img.shields.io/badge/Website-lateralus.dev-7c5cfc?style=flat-square&labelColor=0a0a0f)](https://lateralus.dev/)
+[![Try It](https://img.shields.io/badge/Playground-Try_in_Browser-22d3ee?style=flat-square&labelColor=0a0a0f)](https://lateralus.dev/playground/)
 [![Install](https://img.shields.io/badge/Install-pip_install_lateralus--lang-34d399?style=flat-square&labelColor=0a0a0f)](https://pypi.org/project/lateralus-lang/)
 [![Tutorials](https://img.shields.io/badge/Tutorials-25_Lessons-a78bfa?style=flat-square&labelColor=0a0a0f)](https://github.com/bad-antics/lateralus-tutorials)
 [![OS](https://img.shields.io/badge/LateralusOS-Full_Kernel-fb923c?style=flat-square&labelColor=0a0a0f)](https://github.com/bad-antics/lateralus-os)
@@ -245,14 +253,14 @@ Automotive security · CAN bus · OBD-II · ECU fuzzing
 
 <br><br>
 
-[![Portal](https://img.shields.io/badge/🌐_Portal-bad--antics.github.io-7c5cfc?style=for-the-badge&labelColor=0a0a0f)](https://bad-antics.github.io/)
+[![Portal](https://img.shields.io/badge/🌐_Portal-lateralus.dev-7c5cfc?style=for-the-badge&labelColor=0a0a0f)](https://lateralus.dev/)
 &nbsp;
-[![Lateralus](https://img.shields.io/badge/|>_Lateralus-Playground-22d3ee?style=for-the-badge&labelColor=0a0a0f)](https://bad-antics.github.io/lateralus/playground/)
+[![Lateralus](https://img.shields.io/badge/|>_Lateralus-Playground-22d3ee?style=for-the-badge&labelColor=0a0a0f)](https://lateralus.dev/playground/)
 
 <br>
 
 *For authorized security testing and educational purposes only.*
 
-**© 2024-2026 bad-antics**
+**© 2023-2026 bad-antics**
 
 </div>
