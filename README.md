@@ -29,10 +29,11 @@ Pattern matching · async/await · structs with impl blocks · zero dependencies
 
 <br><br>
 
-**What's new in v3.2 (Apr 2026):** a 10-pillar `@law` verification pipeline —
-the compiler discovers, verifies, and proves algebraic laws about your code
-(distributivity, homomorphisms, inverses, involutions) directly from source.
-**2055 tests green · 0 regressions** · [read the CHANGELOG →](https://github.com/bad-antics/lateralus-lang/blob/main/CHANGELOG.md)
+**What's new (Apr 2026):** Wave 11 stdlib expansion adds a `ranking` module
+(BM25 · TF-IDF · cosine), an `lt-trace` profiler, and a 30-minute "first hour"
+tutorial. Plus 5 new Advent-of-Code 2023 solutions and 5 fresh Rosetta classics
+joining the 10-pillar `@law` verification pipeline.
+**138 stdlib modules · 2055 tests green · 0 regressions** · [read the CHANGELOG →](https://github.com/bad-antics/lateralus-lang/blob/main/CHANGELOG.md)
 
 
 <br><br>
