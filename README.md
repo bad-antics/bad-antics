@@ -112,15 +112,14 @@ Automotive security · CAN bus · OBD-II · ECU fuzzing
 </td>
 <td valign="top" width="33%">
 
-**N01D Desktop Suite**
-<br>*Security-focused desktop apps*
+**Lateralus Extensions**
+<br>*VS Code / Open VSX editor tooling*
 
-🔥 [n01d-forge](https://github.com/bad-antics/n01d-forge) ⭐9 — Secure burner
-<br>🖥️ [n01d-machine](https://github.com/bad-antics/n01d-machine) ⭐8 — VM manager
-<br>🎬 [n01d-media](https://github.com/bad-antics/n01d-media) — Media suite
-<br>🌍 [n01d-overwatch](https://github.com/bad-antics/n01d-overwatch) — OSINT dashboard
-<br>🐳 [n01d-docker](https://github.com/bad-antics/n01d-docker) — Security containers
-<br>⏰ [n01d-timemachine](https://github.com/bad-antics/n01d-timemachine) — Retro emulator
+🌀 [lateralus-lang](https://marketplace.visualstudio.com/items?itemName=lateralus.lateralus-lang) — `.ltl` LSP & syntax · [Open VSX](https://open-vsx.org/extension/lateralus/lateralus-lang)
+<br>📐 [antikythera-digital](https://marketplace.visualstudio.com/items?itemName=lateralus.antikythera-digital) — `.atk` geometric calculus · [Open VSX](https://open-vsx.org/extension/lateralus/antikythera-digital)
+<br>🦍 [grugbot420](https://marketplace.visualstudio.com/items?itemName=lateralus.grugbot420) — Grug oracle & status-bar wisdom · [Open VSX](https://open-vsx.org/extension/lateralus/grugbot420)
+<br>💿 [lateralus-os](https://github.com/bad-antics/lateralus-lang/releases/latest) — Bootable ISO
+<br>🌐 [lateralus.dev](https://lateralus.dev) — Docs & install
 
 </td>
 <td valign="top" width="33%">
